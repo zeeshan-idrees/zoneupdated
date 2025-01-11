@@ -1,0 +1,476 @@
+@font-face {
+  font-family: "space-mission";
+  src        : url("./assets/font/space_mission/SPACE\ MISSION.otf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src        : url("./assets/font/Poppins/Poppins-Thin.otf");
+}
+
+@font-face {
+  font-family: "Poppins-500";
+  src        : url("./assets/font/Poppins/Poppins-Regular.otf");
+}
+
+.main-bg {
+  background-color: #05061e;
+}
+
+.birthday_top-bg {
+  background-image: url(./assets/img/bg-image.png);
+}
+
+.blueBtn {
+  /* background-image : url(./assets/img/blueBtnBg.svg); */
+  background-color : transparent;
+  background-repeat: no-repeat;
+  background-size  : 100% 100% !important;
+  border           : 0;
+  padding          : 34px;
+}
+
+.text-blue {
+  color: #2844c3;
+}
+
+.text-green {
+  color: #98cf17;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-dark-blue {
+  color: #1f307e;
+}
+
+.text-white-80 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.w-fitContent {
+  width: fit-content;
+}
+
+.w-108 {
+  width: 108%;
+}
+
+.w-18ch {
+  width: 18ch;
+}
+
+.h-300 {
+  height: 300px;
+}
+
+.top-30 {
+  top: 30px;
+}
+
+.font-space {
+  font-family: "space-mission";
+}
+
+.font-poppins {
+  font-family: "Poppins";
+}
+
+.font-poppins-500 {
+  font-family: "Poppins-500";
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-7vw {
+  font-size: clamp(50px, 7vw, 100px);
+}
+
+.fs-5vw {
+  font-size: clamp(35px, 7vw, 70px);
+}
+
+.fs-3vw {
+  font-size: clamp(33px, 5vw, 60px);
+}
+
+.fs-2vw {
+  font-size: clamp(30px, 4vw, 50px);
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.videoClip {
+  width        : 90%;
+  height       : 500px;
+  margin       : 0 auto;
+  /* object-fit: contain; */
+}
+
+.videoClip iframe {
+  width     : 100%;
+  height    : 100%;
+  object-fit: contain;
+}
+
+.videoClip .video-control-btn {
+  position  : absolute;
+  top       : 50%;
+  left      : 50%;
+  transform : translate(-50%, -50%);
+  background: none;
+  border    : none;
+  cursor    : pointer;
+  z-index   : 10;
+}
+
+.videoClip .video-control-btn img {
+  width : 50px;
+  /* Adjust size as needed */
+  height: 50px;
+  /* Adjust size as needed */
+}
+
+.HalfImg {
+  width : 50%;
+  height: 400px;
+}
+
+.text-white-1 {
+  color: rgba(255, 255, 255, 1);
+}
+
+.text-yellow {
+  color: #ffed00;
+}
+
+.buttonToParallelogram {
+  bottom: -10%;
+  left  : 10%;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.dot {
+  height          : 5px;
+  width           : 5px;
+  background-color: #98cf17;
+}
+
+.white-image-button {
+  /* background-image   : url("./assets/img/whiteBtn.svg"); */
+  background-size    : contain;
+  /* Ensures the image covers the entire button */
+  background-position: center;
+  /* Centers the image */
+  line-height        : 50px;
+  /* Centers the text vertically */
+  cursor             : pointer;
+  /* Changes the cursor to pointer on hover */
+  background-repeat  : no-repeat;
+}
+
+.white-image-button:hover {
+  opacity: 0.8;
+  /* Adds a slight opacity change on hover */
+}
+
+.about-us_content {
+  max-width: 1040px;
+  margin   : 0 auto;
+  padding  : 0 30px;
+}
+
+.divider {
+  border-bottom: 1px solid #2844c3;
+}
+
+.package1-data {
+  position: absolute;
+  top     : 23px;
+}
+
+.package-heading-1 {
+  font-size  : 24px;
+  color      : #ffd700;
+  font-weight: bold;
+}
+
+.package-heading-2 {
+  font-size  : 24px;
+  color      : #ffffff;
+  font-weight: bold;
+}
+
+.package-text {
+  width  : 260px;
+  padding: 10px;
+}
+
+.bd-right_text {
+  font-size: 32px;
+}
+
+.school-trip_packages {
+  width: auto !important;
+}
+
+.bg-trips_section {
+  background: #1e3784;
+}
+
+.school-bus {
+  border       : 1px solid #ffffff;
+  border-radius: 20px;
+  padding      : 20px 0px 0px 25px;
+}
+
+.trips-text_section img {
+  width         : 100%;
+  height        : 425px;
+  object-fit    : contain;
+  padding-bottom: 20px;
+}
+
+.bus-image img {
+  border-radius: 20px;
+}
+
+/* Createing Memories with */
+
+.school-area_section {
+  border       : 1px solid#FFFFFF;
+  border-radius: 20px;
+  padding      : 20px;
+  margin       : 12px;
+}
+
+.school-area_section li {
+  padding-bottom: 14px;
+}
+
+.about-content {
+  max-width: 600px;
+  margin   : 0 auto;
+}
+
+.memories-section {
+  font-size: 30px;
+}
+
+.surprise-content {
+  font-size: 28px;
+}
+
+.book-now-button {
+  font-size: 22px !important;
+}
+
+.adventure-text {
+  font-size: 18px;
+}
+
+/* General nav styles */
+.navbar-nav .nav-link {
+  color      : #333;
+  /* padding    : 0.5rem 1rem; */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+  /* Change to your desired hover color */
+}
+
+/* Dropdown submenu styles */
+.dropdown-menu {
+  display         : none;
+  position        : absolute;
+  background-color: white;
+  list-style      : none;
+  padding         : 0;
+  margin-top      : 1rem;
+  box-shadow      : 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index         : 1000;
+  transition      : all 0.3s ease-in-out;
+  opacity         : 0;
+  visibility      : hidden;
+  transform       : translateY(10px);
+  /* start the dropdown 10px lower */
+}
+
+.dropdown:hover .dropdown-menu {
+  display   : block;
+  visibility: visible;
+  opacity   : 1;
+  transform : translateY(0);
+}
+
+/* Animate dropdown when clicking */
+.show {
+  display   : block;
+  visibility: visible;
+  opacity   : 1;
+  transform : translateY(0);
+}
+
+/* Dropdown menu items */
+.dropdown-item {
+  padding        : 0.75rem 1.5rem;
+  color          : #333;
+  text-decoration: none;
+  transition     : background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color           : #007bff;
+}
+
+/* Fix for dropdown positioning */
+.dropdown {
+  position: relative;
+}
+button.white-image-button{
+  background-color:#FFFFFF !important;
+  border-radius:6px;
+}
+@media (max-width: 768px) {
+  .topBar {
+    clip-path: none;
+  }
+
+  .fs-30 {
+    font-size: 25px;
+  }
+
+  .banner-content {
+    font-size: 35px;
+    width    : unset;
+  }
+
+  .blue-haxagon-left .blue-inner {
+    padding  : 0px 29px;
+    font-size: 12px;
+  }
+
+  .white-image-button {
+    line-height  : 38px;
+    font-size    : 12px;
+    margin-bottom: 20px;
+  }
+
+  .videoClip {
+    width: 100%;
+  }
+
+  .about-content {
+    font-size: 26px;
+  }
+
+  .parties-image img {
+    width: 100%;
+  }
+
+  .memories-section {
+    font-size: 22px;
+  }
+
+  .birthday-contnet {
+    font-size: 20px;
+  }
+
+  .surprise-content {
+    font-size: 18px;
+  }
+
+  .book-now-button {
+    font-size: 14px !important;
+  }
+
+  .adventure-text {
+    font-size: 16px;
+  }
+}
+
+.input-feild {
+  border-radius: 6px !important;
+  border       : 1px solid #eaeaea26 !important;
+}
+
+.image-container {
+  flex         : 0 0 auto;
+  /* Prevent images from shrinking */
+  width        : 200px;
+  /* Set a fixed width for each image */
+  transition   : transform 0.3s, box-shadow 0.3s;
+  /* Smooth hover effect */
+  border-radius: 8px;
+  /* Rounded corners for the container */
+}
+
+.image-container img {
+  width        : 100%;
+  /* Make images responsive */
+  height       : auto;
+  /* Maintain aspect ratio */
+  border-radius: 8px;
+  /* Round the corners of the image */
+  box-shadow   : 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
+}
+
+.image-container:hover {
+  transform : scale(1.05);
+  /* Scale up on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Increase shadow on hover */
+}

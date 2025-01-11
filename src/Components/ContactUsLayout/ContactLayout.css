@@ -1,0 +1,236 @@
+/* .contact-blue-haxagon {
+    padding: 1px;
+    background-color: #2844C3;
+    height: 100%;
+}
+
+.contactborder .contact-inner-bg {
+    background: #05061E;
+}
+
+.contactborder .contact-inner-bg,
+.contactborder .contact-inner,
+.contactborder .contact-blue-haxagon {
+
+    clip-path:polygon(13% 0, 100% 17%, 100% 83%, 87% 100%, 0 83%, 0 17%);
+    -webkit-clip-path:polygon(13% 0, 100% 17%, 100% 83%, 87% 100%, 0 83%, 0 17%);
+}
+
+.contactborder .contact-inner {
+    margin-top: 0px;
+    background-color: #2844C326;
+    padding: 0;
+}
+
+.contactborder:after,
+.contactborder:before {
+    content: "";
+    position: absolute;
+     background-color:#1F307E;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    width: 100%;
+    height: calc(100% - 10px);
+    border-radius: 0;
+    transition: -webkit-clip-path 0.2s ease;
+    -webkit-transition: -webkit-clip-path 0.2s ease;
+    transition: clip-path 0.2s ease;
+    transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+}
+
+.contactborder:before {
+    top: -5px;
+    left: 0px;
+    clip-path: polygon(19.7% 0.5%, 41% 0%, 19.7% 0%, 0 68%);
+    -webkit-clip-path: polygon(19.7% 0.5%, 41% 0%, 19.7% 0%, 0 68%);
+}
+
+.contactborder:after {
+    right: 0;
+    clip-path: polygon(99.5% 17.5%, 15% 1%, 100% 17%, 100% 83%, 87% 100%, 63% 95%, 87% 99%, 99.5% 83%);
+    -webkit-clip-path: polygon(99.5% 17.5%, 15% 1%, 100% 17%, 100% 83%, 87% 100%, 63% 95%, 87% 99%, 99.5% 83%);
+}
+ */
+
+
+.video-blue-haxagon {
+    padding: 1px;
+    background-color: #2844C3;
+    height: 100%;
+}
+
+.contactborder .video-inner-bg {
+    background: #05061E;
+}
+
+.contactborder .video-inner-bg,
+.contactborder .video-inner,
+.contactborder .video-blue-haxagon {
+    clip-path: polygon(13% 0, 100% 17%, 100% 81%, 87.5% 96.5%, 0 81%, 0 17%);
+    -webkit-clip-path: polygon(13% 0, 100% 17%, 100% 81%, 87.5% 96.5%, 0 81%, 0 17%);
+}
+
+.contactborder .video-inner {
+    margin-top: 0px;
+    background-color: #2844C326;
+    padding: 0;
+}
+
+.contactborder:after,
+.contactborder:before {
+    content: "";
+    position: absolute;
+    background-color: #1F307E;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    width: 100%;
+    height: calc(100% - 10px);
+    border-radius: 0;
+    transition: -webkit-clip-path 0.2s ease;
+    -webkit-transition: -webkit-clip-path 0.2s ease;
+    transition: clip-path 0.2s ease;
+    transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+}
+
+.contactborder:before {
+    bottom: 0;
+    left: -5px;
+    clip-path: polygon(0 65%, 0 82%, 24% 86%, 0.3% 81.5%);
+    -webkit-clip-path: polygon(0 65%, 0 82%, 24% 86%, 0.3% 81.5%);
+}
+
+.contactborder:after {
+    top: 0;
+    right: -9px;
+    clip-path: polygon(99.5% 16.5%, 17% 0%, 99.7% 16%, 99.7% 83%, 87% 99.5%, 62% 95%, 87% 99%, 99.5% 83%);
+    -webkit-clip-path: polygon(99.5% 16.5%, 17% 0%, 99.7% 16%, 99.7% 83%, 87% 99.5%, 62% 95%, 87% 99%, 99.5% 83%);
+}
+
+.contactborder .pad {
+    padding: 2rem 0 0 7rem !important;
+}
+
+.contactborder .pad .frst_sec {
+    padding-bottom: 9rem !important;
+}
+
+.contact-select {
+    position: relative;
+}
+
+.contact-select.open {
+    z-index: 1;
+}
+
+.contact-select .summary::-webkit-details-marker {
+    display: none;
+}
+
+.contact-select.open .summary:before {
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.contact-select .summary:after {
+    content: '';
+    display: inline-block;
+    float: right;
+    width: .8rem;
+    height: .8rem;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom-left-radius: 2px;
+    transform: rotate(45deg) translate(50%, 0%);
+    transform-origin: center center;
+    transition: transform ease-in-out 100ms
+}
+
+.contact-select .summary:focus {
+    outline: none;
+}
+
+.contact-select.open .summary:after {
+    transform: rotate(135deg) translate(0%, 0%);
+    margin-top: 10px;
+}
+
+.contact-select .list {
+    width: 100%;
+    background: #2844C3;
+    position: absolute;
+    bottom: 115%;
+    left: 0;
+    padding: 6px 12px;
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 200px;
+    overflow-y: auto;
+    list-style: none;
+    /* Hide scrollbar for Webkit browsers */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.contact-select li {
+    margin: 0;
+    padding: 12px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.contact-select li:first-child {
+    padding-top: 0;
+}
+
+.contact-select li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* FAKE SELECT */
+
+.contact-select .summary.radios {
+    counter-reset: radios;
+}
+
+.contact-select .summary.radios:before {
+    content: var(--selection);
+}
+
+.contact-select input[type=radio] {
+    counter-increment: radios;
+    appearance: none;
+    display: none;
+}
+
+.contact-select input[type=radio]:checked {
+    display: inline;
+    --display: block;
+}
+
+.contact-select .list {
+    counter-reset: labels;
+}
+
+.contact-select label {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.contact-select label span {
+    --display: none;
+    display: var(--display);
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #727272;
+    border-radius: 3px;
+}

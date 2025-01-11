@@ -1,0 +1,22 @@
+
+
+
+.nav-link.active {
+    color: #030000 !important;
+    font-weight: 500;
+}
+.nav-link {
+  
+        color: #2844C3 !important;
+      
+    font-weight: 500;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .topBar {
+        clip-path: none;
+    }
+}

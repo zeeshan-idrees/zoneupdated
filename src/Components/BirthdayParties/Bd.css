@@ -1,0 +1,27 @@
+.img-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 400px;
+    
+}
+.image1{
+   
+   
+      position: relative;
+    height: 350px; 
+    z-index: 1;
+    left: 120px;
+    top: -30px;
+ 
+   
+}
+.image2{
+    position:relative;
+    height: 350px; 
+   top: 50px;
+   left: -220px;
+   z-index: 2;
+   
+}

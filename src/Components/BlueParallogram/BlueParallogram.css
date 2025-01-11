@@ -1,0 +1,25 @@
+.blue-haxagon-left {
+    padding: 0 0.5px 0.5px 0.5px;
+    background-color: #2844C3;
+}
+
+.blue-haxagon-left .blue-inner-bg {
+    background: #05061E;
+}
+
+.blue-haxagon-left .blue-inner-bg,
+.blue-haxagon-left .blue-inner,
+.blue-haxagon-left {
+    clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0% 29%);
+    -webkit-clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0% 29%);
+}
+
+.blue-haxagon-left .blue-inner {
+    margin-top: 0px;
+    background-color:#98CF17;
+    padding: 0 50px;
+}
+
+.blue-inner>* {
+    padding: 10px 0;
+}

@@ -1,0 +1,22 @@
+.white-inner-bg {
+    background-color: #05061E;
+}
+
+.white-inner {
+    margin-top: 0px;
+    background-color: #ffffff20;
+    padding: 0 50px;
+}
+
+
+.white-haxagon-right {
+    padding: 2px;
+    background-color: #FFFFFF50;
+}
+
+.white-haxagon-right .white-inner-bg,
+.white-haxagon-right .white-inner,
+.white-haxagon-right {
+    clip-path: polygon(8% 0, 92% 0, 100% 29%, 92% 100%, 8% 100%, 0% 50%);
+    -webkit-clip-path: polygon(8% 0, 92% 0, 100% 29%, 92% 100%, 8% 100%, 0% 50%);
+}

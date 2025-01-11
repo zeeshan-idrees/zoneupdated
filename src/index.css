@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html,
+body,
+#root {
+
+  font-family: 'RubikLight';
+}
+
+html,
+body,
+#root .norwester {
+  font-style : normal;
+  font-family: 'norwester';
+}
+
+.Roboto {
+  font-family: Roboto;
+}
+
+.Poppins {
+  font-family: Poppins;
+}
+
+.Rubik {
+  font-family: Rubik;
+}
+
+.fs_12 {
+  font-size: 12px;
+}
+
+.fs_14 {
+  font-size: 14px;
+}
+
+.fs_16 {
+  font-size: 16px;
+}
+
+.fs_18 {
+  font-size: 18px;
+}
+
+.fs_20 {
+  font-size: 20px;
+}
+
+.fs_22 {
+  font-size: 22px;
+}
+
+.fs_24 {
+  font-size: 24px;
+}
+
+.fs_26 {
+  font-size: 26px;
+}
+
+.fs_30 {
+  font-size: 30px;
+}
+
+.fs_32 {
+  font-size: 32px;
+}
+
+.fs_34 {
+  font-size: 34px;
+}
+
+.fs_40 {
+  font-size: 40px;
+}
+
+.fs_42 {
+  font-size: 42px;
+}
+
+.fs_44 {
+  font-size: 44px;
+}
+
+.fs_48 {
+  font-size: 48px;
+}
+
+.fs_56 {
+  font-size: 56px;
+}
+
+.fs_64 {
+  font-size: 64px;
+}
+
+.fs_96 {
+  font-size: 96px;
+}
+
+.fw-400 {
+  font-weight: 400
+}
+
+.fw-500 {
+  font-weight: 500
+}
+
+.fw-600 {
+  font-weight: 600
+}
+
+.fw-700 {
+  font-weight: 700
+}
+
+.fw-800 {
+  font-weight: 800
+}
+
+.lh_19 {
+  line-height: 19px;
+}
+
+.lh_28 {
+  line-height: 28px;
+}
+
+.lh_32 {
+  line-height: 32px;
+}
+
+.lh_37 {
+  line-height: 37px;
+}
+
+.lh_40 {
+  line-height: 40px;
+}
+
+.lh_44 {
+  line-height: 44px;
+}
+
+.lh-47 {
+  line-height: 47px;
+}
+
+.lh_56 {
+  line-height: 56px;
+}
+
+.lh_60 {
+  line-height: 60px;
+}
+
+.ls_02 {
+  letter-spacing: 0.2px;
+}
+
+.lh-20 {
+  line-height: 20px;
+}

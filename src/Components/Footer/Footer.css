@@ -1,0 +1,67 @@
+.blue-haxagon-footer {
+    padding: 1.5px 0 0 0;
+   
+}
+/* 
+.blue-haxagon-footer .blue-footer-inner-bg {
+     background: #0e14cf; 
+} */
+
+.blue-haxagon-footer .blue-footer-inner-bg,
+.blue-haxagon-footer .blue-footer-inner,
+.blue-haxagon-footer {
+    clip-path: polygon(8% 8%, 88% 0, 100% 39%, 100% 100%, 0 100%, 0 75%);
+    -webkit-clip-path: polygon(8% 8%, 88% 0, 100% 39%, 100% 100%, 0 100%, 0 75%);
+    
+}
+
+.blue-haxagon-footer .blue-footer-inner {
+    margin-top: 0px;
+    background-color: #0f32ce;
+    padding: 10px 0;
+}
+
+/* .blue-footer-inner> {
+    padding: 10px 0;
+} */
+
+.purple-haxagon-footer {
+    padding: 1.5px 0 0 0;
+  
+}
+
+
+.purple-haxagon-footer .purple-footer-inner,
+.purple-haxagon-footer {
+    clip-path: polygon(9% 10%, 87% 1%, 100% 45%, 100% 100%, 0% 100%, 0% 90%);
+    -webkit-clip-path: polygon(9% 10%, 87% 1%, 100% 45%, 100% 100%, 0% 100%, 0% 90%);
+}
+
+.purple-haxagon-footer .purple-footer-inner {
+    margin-top: 0px;
+    background-color: rgba(43, 18, 189, 0.884); /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgba(43, 18, 189, 0.884), rgb(20, 27, 87));
+    padding: 0 50px;
+}
+
+.purple-footer-inner>* {
+    padding: 10px 0;
+}
+
+.clip-test {
+    clip-path: polygon(15% 0%, 84% 1%, 97% 45%, 100% 100%, 1% 100%, 3% 100%);
+    -webkit-clip-path: polygon(15% 0%, 84% 1%, 97% 45%, 100% 100%, 1% 100%, 3% 100%);
+}
+
+.footer-pad {
+    padding: 0 3rem 0 6rem;
+}
+
+hr {
+    padding: 0.05rem
+}
+.footer-link{
+    display: block;
+    color: white;
+    text-decoration: none;
+}

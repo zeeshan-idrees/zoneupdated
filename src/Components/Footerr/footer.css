@@ -1,0 +1,24 @@
+.footer-icons{
+    width: 35px;
+    height: 35px;
+}
+hr {
+    padding: 0.05rem
+}
+.footer-link{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.footer-bg{
+    background-color: rgba(43, 18, 189, 0.884); /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgba(37, 15, 160, 0.884), rgb(20, 27, 87));
+    clip-path: polygon(9% 10%, 87% 1%, 100% 45%, 100% 100%, 0% 100%, 0% 90%);
+    -webkit-clip-path: polygon(9% 10%, 87% 1%, 100% 45%, 100% 100%, 0% 100%, 0% 90%);
+}
+.footer-outline{
+    background-color: rgba(52, 24, 211, 0.884); /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgba(62, 29, 252, 0.959), rgb(49, 70, 255));
+    clip-path: polygon(9% 10%, 87% 1%, 100% 45%, 100% 100%, 0% 100%, 0% 80%);
+    -webkit-clip-path: polygon(9% 12%, 87% 1%, 100% 45%, 100% 100%, 0% 100%, 0% 85%);
+}

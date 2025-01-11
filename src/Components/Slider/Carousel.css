@@ -1,0 +1,114 @@
+.carousel-container {
+    /* width: 80%;
+    margin: 0 auto; */
+    position: relative;
+    /* Add position relative to the container */
+    background: url('../../assets/img/caroselbg.jpg') no-repeat;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: clamp(40px, 42vw, 850px);
+    background-size: cover;
+    background-position-x: center;
+    align-content: center;
+}
+
+.homeCarousel .slick-slide {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s, opacity 0.5s;
+    display: flex !important;
+    align-items: center
+}
+
+.homeCarousel .slick-track {
+    height: 35vw;
+}
+
+.homeCarousel .slick-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.homeCarousel .slick-slide:not(.slick-center) {
+    opacity: 0.5;
+    transform: scale(0.8);
+}
+
+.homeCarousel .slick-center {
+    opacity: 1 !important;
+    transform: scale(1.5) !important;
+    z-index: 999;
+}
+
+/* Customize slick arrows */
+.homeCarousel .slick-prev,
+.homeCarousel .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: #000;
+    z-index: 2;
+    height: 5vw !important;
+    width: 5vw !important;
+}
+
+.homeCarousel .slick-prev {
+    left: 20% !important;
+    /* Adjust left position relative to the active slide */
+}
+
+.homeCarousel .slick-next {
+    right: 20% !important;
+    /* Adjust right position relative to the active slide */
+}
+
+.homeCarousel .slick-prev:before,
+.homeCarousel .slick-next:before {
+    color: #000;
+}
+
+/* Customize slick dots */
+.homeCarousel .slick-dots li button:before {
+    font-size: 12px;
+    color: #000;
+}
+
+.homeCarousel .slick-dots li.slick-active button:before {
+    color: #000;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 100%;
+    }
+
+    /* .slick-slide:not(.slick-center) {
+        transform: scale(0.9);
+    }
+
+    .slick-center {
+        transform: scale(1.1) !important;
+    } */
+
+    .homeCarousel .slick-prev,
+    .homeCarousel .slick-next {
+        font-size: 1.5em;
+    }
+
+    .homeCarousel .slick-prev {
+        left: 18% !important;
+        /* Adjust for smaller screens */
+    }
+
+    .homeCarousel .slick-next {
+        right: 18% !important;
+        /* Adjust for smaller screens */
+    }
+}
+
+.homeCarousel .slick-arrow.slick-prev {
+    transform: translate(0, -50%) rotate(180deg) !important;
+}
