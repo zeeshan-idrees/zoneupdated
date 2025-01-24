@@ -32,7 +32,7 @@ const SchoolTrips = () => {
                 </div>
             </div>
             <WhatsAppButton/>
-            <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 my-md-5 "> 🔥 Thrill Zone Ongoing Promo Deals! 🔥</div>
+            <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 my-md-5 "> Thrill Zone Ongoing Promo Deals!</div>
             <div className="container">
                 <div className=" row promo-deals ">
                     <div className=" col-lg-6  ">
@@ -49,12 +49,12 @@ const SchoolTrips = () => {
                         <p className=" font-poppins-400 fs-5  text-blue">Wednesday: Enjoy another 50% extra top-up bonus!</p>
                         <p className=" font-poppins-400 fs-5  text-blue">Bring your friends and family for an unforgettable experience and take advantage of these awesome deals, only available on Tuesdays and Wednesdays!</p>
 
-                           <p className=" font-poppins-400 fs-5  text-blue">📍 Location: Penta Square Mall, DHA Phase 5, Lahore</p>
+                           <p className=" font-poppins-400 fs-5  text-blue"> Location: Penta Square Mall, DHA Phase 5, Lahore</p>
                     </div>
                 </div>
             </div>
             <div className="container">
-            <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 my-md-5 "> 🔥 Thrill Zone Special Offers! 🔥</div>
+            <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 my-md-5 "> Thrill Zone Special Offers! </div>
                 <div className="row mt-0  fw-bold justify-content-between  my-2 my-md-5">
                     <div className=" col-lg-6  text-center ">
                         <img src={Dealspost} alt='' className="img-fluid rounded-4" />

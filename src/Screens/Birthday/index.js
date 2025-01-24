@@ -2,14 +2,11 @@ import React, { useState, useRef } from "react";
 import HeadSection from "../../Components/HomePage/Header";
 import Topbar from "../../Components/Topbar";
 import Birthdytrill from "../../Components/Birthdytrill";
-
-import packageimg from "../../assets/img/packageimg.jpg";
 import Birthdaypost from "../../assets/img/Birthdaypost.jpg";
 import package1 from "../../assets/img/package1.png";
 import playIcon from "../../assets/img/play_btn.svg"; // Your custom play icon
 import pauseIcon from "../../assets/img/pause_btn.svg"; // Your custom pause icon
 import IrrParallelogram from "../../Components/IrrParallelogram/IrrParallelogram";
-
 import Footer from "../../Components/Footerr";
 import WhatsAppButton from "../../Components/Whatsapp";
 
@@ -34,7 +31,7 @@ const Gallery = () => {
             <HeadSection img="banner party" align="bottom" />
           </div>
         </div>
-        <WhatsAppButton/>
+        <WhatsAppButton />
         <div className="container p-0">
           <div className="container bg-white pt-4">
             <Birthdytrill heading="Celebrate Bday with Thrill Zone" />
@@ -43,63 +40,74 @@ const Gallery = () => {
             </div>
 
             <div className="row justify-content-center g-5">
-              <div className="col-12 col-lg-6">
-                <img src={packageimg} alt="" className="img-fluid rounded-4" />
-              </div>
 
-              <div className="school-trip_packages position-relative col-sm-12 col-lg-3">
+
+              <div className="school-trip_packages position-relative col-sm-12 col-lg-4">
                 <div className="package-image">
-                  <img src={package1} alt="" width="280px" />
+                  <img src={package1} alt="" width="290px" height="370px" />
                 </div>
                 <div className="package1-data">
                   <h4 className=" package-heading-1 text-center">Gold</h4>
                   <div className="package-text">
-                    <h3 className="fs-20 text-white">Package 1</h3>
+                    <h3 className="fs-20 text-white">Package 1 (15 PAX MIN)</h3>
                     <ul>
-                      <li className="fs-18 text-white">5,800 Per Person</li>
+                      <li className="fs-18 text-white">4,900 Per Person</li>
                       <li className="fs-18 text-white"> Duration: 3Hrs</li>
                       <li className="fs-18 text-white">
-                        {" "}
-                        Valid fot all physical activities and games.
+
+                        Valid for Trampoline, Ninja & SoftPlay .
                       </li>
-                      <li className="fs-18 text-white">Credit Limit 3,500</li>
-                      <li className="fs-18 text-white"> Magic show free.</li>
-                      <li className="fs-18 text-white">
-                        1x any beverage of choice per person
-                      </li>
+                      <li className="fs-18 text-white">Credit Limit 4,000</li>
+                      <li className="fs-18 text-white"> Magic show & Drink Free Per Person.</li>
+
                     </ul>
-                    <p className="fs-18 text-white text-center">
-                      Additional items can be selected from add on list
-                    </p>
+
                   </div>
                 </div>
               </div>
-              <div className="school-trip_packages position-relative col-sm-12 col-lg-3">
+              <div className="school-trip_packages position-relative col-sm-12 col-lg-4">
                 <div className="package-image">
-                  <img src={package1} alt="" width="280px" />
+                  <img src={package1} alt="" width="290px"  height="370px" />
                 </div>
                 <div className="package1-data">
                   <h4 className=" package-heading-2 text-center">Silver</h4>
                   <div className="package-text">
-                    <h3 className="fs-20 text-white">Package 2</h3>
+                    <h3 className="fs-20 text-white">Package 2 (15 PAX MIN)</h3>
                     <ul>
-                      <li className="fs-18 text-white"> 4,800 Per Person</li>
+                      <li className="fs-18 text-white"> 3,900 Per Person</li>
+                      <li className="fs-18 text-white"> Duration: 2 Hrs</li>
+                      <li className="fs-18 text-white">
+
+                        Valid for Trampoline, Ninja & SoftPla
+                      </li>
+                      <li className="fs-18 text-white">Credit Limit 3,000</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="school-trip_packages position-relative col-sm-12 col-lg-4">
+                <div className="package-image">
+                  <img src={package1} alt="" width="290px"  height="370px" />
+                </div>
+                <div className="package1-data">
+                  <h4 className=" package-heading-2 text-center">ADD ON </h4>
+                  <div className="package-text">
+                    <h3 className="fs-20 text-white">Customized Cake | Decor Rs.10,000 to 30,000 </h3>
+                    <ul>
+                      <li className="fs-18 text-white"> Magic Show : Rs 9,500 | Pinnata Rs: 8,000</li>
                       <li className="fs-18 text-white"> Duration: 2.5 Hrs</li>
                       <li className="fs-18 text-white">
-                        {" "}
-                        Valid fot all physical activities and games.
+                     Photography Schoot with Frame 10 to 15pc or 2 vidoes 20k
                       </li>
-                      <li className="fs-18 text-white">Credit Limit 3,500</li>
+                      <li className="fs-18 text-white">Venue Charges 20k</li>
                     </ul>
-                    <p className="fs-18 text-white text-center">
-                      Additional items can be selected from add on list
-                    </p>
+                   
                   </div>
                 </div>
               </div>
             </div>
 
-            <section className="pb-0 pb-md-5 text-blue font-poppins-500 pt-0 pt-md-5">
+            {/* <section className="pb-0 pb-md-5 text-blue font-poppins-500 pt-0 pt-md-5">
               <div className="row mt-4 fw-bold justify-content-between pt-3 my-5">
                 <div className=" col-lg-6  text-center ">
                   <img
@@ -127,9 +135,9 @@ const Gallery = () => {
                   </p>
                 </div>
               </div>
-            </section>
+            </section> */}
 
-            <section className=" ">
+            <section className=" mt-5 ">
               <div className="videoClip borderParallelogram position-relative  ">
                 <IrrParallelogram>
                   <video

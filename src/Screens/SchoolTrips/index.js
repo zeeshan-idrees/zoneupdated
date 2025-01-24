@@ -55,7 +55,7 @@ const SchoolTrips = () => {
                     </div>
 
                     <div className=" col-lg-6 font-poppins-400  pt-3 d-flex flex-column justify-content-center">
-                        <p className=" fs-2vw about-content text-blue text-center" >📚 Plan Your School Trip at Thrill Zone! 🎒</p>
+                        <p className=" fs-2vw about-content text-blue text-center" >Plan Your School Trip at Thrill Zone!</p>
                         <p className="fs-5 text-blue fw-500">Looking for the perfect destination for your next school trip? Thrill Zone is the ultimate spot for a fun and adventurous day out with your classmates!
 
                             From exciting rides to interactive games, there's something for everyone to enjoy. Thrill Zone offers a safe, engaging, and thrilling experience for students of all ages. Let us take care of the fun while you focus on making memories with your friends!

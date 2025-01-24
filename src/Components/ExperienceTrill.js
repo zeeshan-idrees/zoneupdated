@@ -1,15 +1,16 @@
 // import IrrParallelogram from "./IrrParallelogram/IrrParallelogram";
-import grid1 from '../assets/img/home1.jpg'
+import grid1 from '../assets/img/carousal2.jpg'
 import grid2 from '../assets/img/home2.jpg'
 import grid3 from '../assets/img/home3.jpg'
-import grid4 from '../assets/img/home4.jpg'
+import grid4 from '../assets/img/partyarea.jpg'
 import grid5 from '../assets/img/draw4.png'
-import grid6 from '../assets/img/home6.jpg'
+import about5 from '../assets/img/about5.jpg'
 
 
 
- 
-const ExperinceTrill = ({heading,heading2}) => {
+
+
+const ExperinceTrill = ({ heading, heading2 }) => {
     return (
         <>
             <section>
@@ -20,44 +21,41 @@ const ExperinceTrill = ({heading,heading2}) => {
                     </p>
                 </div>
                 <div className="row justify-content-center row-gap-3 text-center ">
+                    <div className=" col-6 col-lg-4 p-1    ">
+                        <img src={grid2} alt='' className="img-fluid rounded-4 " />
+                    </div>
 
                     <div className=" col-6 col-lg-4 p-1    ">
-                        
-                            <img src={grid1} alt='' className="img-fluid rounded-4 rounded-4 " />
-                       
-                        
+                        <img src={grid1} alt='' className="img-fluid rounded-4 rounded-4 " />
+
                     </div>
                     <div className=" col-6 col-lg-4 p-1    ">
-                        
-                            <img src={grid2} alt='' className="img-fluid rounded-4 " />
-                        
-                    
+
+                        <img src={about5} alt='' className="img-fluid rounded-4  " />
+
+
+                    </div>
+
+                    <div className=" col-6 col-lg-4 p-1    ">
+
+                        <img src={grid4} alt='' className="img-fluid rounded-4  " />
+
+
                     </div>
                     <div className=" col-6 col-lg-4 p-1    ">
-                        
-                            <img src={grid3} alt='' className="img-fluid rounded-4  " />
-                        
-                    
+
+                        <img src={grid3} alt='' className="img-fluid rounded-4  " />
+
+
                     </div>
                     <div className=" col-6 col-lg-4 p-1    ">
-                        
-                            <img src={grid4} alt='' className="img-fluid rounded-4  " />
-                        
-                     
+
+                        <img src={grid5} alt='' className="img-fluid rounded-4  " />
+
+
                     </div>
-                    <div className=" col-6 col-lg-4 p-1    ">
-                        
-                            <img src={grid5} alt='' className="img-fluid rounded-4  " />
-                            
-                      
-                    </div>
-                    <div className=" col-6 col-lg-4 p-1    ">
-                        
-                            <img src={grid6} alt='' className="img-fluid rounded-4  " />
-                        
-                       
-                    </div>
-                   
+
+
                 </div>
             </section>
         </>

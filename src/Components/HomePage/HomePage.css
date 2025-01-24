@@ -8,10 +8,6 @@
     background: url('../../assets/img/comingsoon.png') no-repeat;
 }
 
-.about-banner {
-    background: url('../../assets/img/about-banner.jpg') no-repeat;
-}
-
 .party {
     background: url('../../assets/img/school.jpg') no-repeat;
 }
@@ -47,13 +43,3 @@
     width: 100%;
 }
 
-@media (max-width: 768px) {
-   .banner.trippackage {
-    background: url('../../assets/img/about-banner.jpg') no-repeat;
-        background-size      : cover !important;
-        background-position-x: center !important;
-    }
-    .banner{
-        height: 400px;
-    }
-}

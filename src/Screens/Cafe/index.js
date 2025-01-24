@@ -3,7 +3,7 @@ import Topbar from "../../Components/Topbar";
 import Footer from "../../Components/Footerr";
 import offers from "../../assets/img/offers.jpg";
 import menubanner from "../../assets/img/menubanner.jpg";
-import cafebanner from "../../assets/img/cafebanner.jpg";
+import cafewall from "../../assets/img/cafewall.jpg";
 import bannernew from "../../assets/img/bannernew.jpg";
 import WhatsAppButton from "../../Components/Whatsapp";
 import playIcon from "../../assets/img/play_btn.svg"; // Your custom play icon
@@ -27,7 +27,8 @@ const SchoolTrips = () => {
       <Topbar />
       <div className="birthday_top-bg p-0 m-0">
         <div className="d-flex ">
-          <img src={cafebanner} width="100% " alt="" />
+          {/* <img src={cafebanner} width="100% " alt="" /> */}
+          <img src={cafewall} width="100% " alt="" />
         </div>
       </div>
 
@@ -35,15 +36,7 @@ const SchoolTrips = () => {
         <CafeTrill heading="Celebrate Bday with Thrill Zone" />
       </div>
 <WhatsAppButton/>
-      <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 my-md-5 ">
-        Cafe Menu
-      </div>
-
-      <div className="container">
-        <div className="bus-image ">
-          <img src={menubanner} width="100% " alt="" />
-        </div>
-      </div>
+  
       <div className="container">
         <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 my-md-5 ">
           Cafe Timings

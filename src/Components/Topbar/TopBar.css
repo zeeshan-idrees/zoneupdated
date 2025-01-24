@@ -11,9 +11,21 @@
       
     font-weight: 500;
 }
-
-
-
+.tag-line{
+    color: #2844C3;
+    font-size: 22px;
+    font-weight: bold;
+}
+a.nav-link.text-blue{
+    border: 1px solid;
+    border-radius: 17px;
+    padding: 5px 9px;
+}
+a.nav-link{
+    border: 1px solid;
+    border-radius: 17px;
+    padding: 5px 9px;
+}
 
 @media (max-width: 768px) {
     .topBar {

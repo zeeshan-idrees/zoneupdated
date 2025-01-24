@@ -1,8 +1,8 @@
 import React from 'react'
 import logo from '../../assets/img/logo.png';
 import facebook from '../../assets/img/facebook.svg'
-import twiter from '../../assets/img/twiter.svg'
-import insta from '../../assets/img/insta.svg'
+
+import insta from '../../assets/img/insta.jpg'
 import phone from '../../assets/img/phone.svg'
 import { NavLink } from 'react-router-dom'
 import './footer.css'
@@ -14,7 +14,7 @@ export default function index() {
           <div className="row  m-0 ps-4 justify-content-between">
             <div className="col-lg-4 col-md-6 py-4 ps-5">
               <img className='w-50' src={logo} alt="" />
-              <h1 className='font-space fs-30  text-white  py-1'>The Pinnacle of Entertainment Hubs</h1>
+              <h1 className=' fs-30  text-white  py-1'>Unleash The Thrill</h1>
               <div className="d-flex flex-wrap gap-3">
                 <a href="https://web.facebook.com/thrillzone.pk/" target="_blank">
                   <img src={facebook} alt="" className='p-1 bg-white footer-icons' />
@@ -25,7 +25,7 @@ export default function index() {
               </div>
             </div>
             <div className="col-lg-4 col-md-6 py-4 ps-5 ">
-              <h1 className='font-space fs-30  text-white  py-1'>Address</h1>
+              <h1 className=' fs-30  text-white  py-1'>Address</h1>
               <p className='fs-5'>Penta Sqaure Phase 5 DHA Lahore</p>
               <div className="d-flex gap-3">
                 <img src={phone} alt="" className='p-1 bg-white footer-icons' />
@@ -33,13 +33,15 @@ export default function index() {
               </div>
             </div>
             <div className="col-lg-4 col-sm-12 d-md-flex d-lg-block justify-content-md-between align-items-md-center py-4 ps-5 ">
-              <h1 className="font-space fs-30 mb-0 text-white  py-1">Links</h1>
+              <h1 className="fs-30 mb-0 text-white  py-1">Links</h1>
               <NavLink to='/' className="font-poppins footer-link fw-bold py-1" >Home</NavLink>
-              <NavLink to='/#' className="font-poppins footer-link  fw-bold py-1 ">About Us</NavLink>
-              <NavLink to='/#' className="font-poppins footer-link  fw-bold py-1 ">Birthday Party</NavLink>
-              <NavLink to='/#' className="font-poppins footer-link fw-bold py-1">Gallery</NavLink>
-              <NavLink to='/#' className="font-poppins footer-link  fw-bold  py-1">Cafe</NavLink>
-              <NavLink to='/#' className="font-poppins footer-link  fw-bold  py-1">Contact</NavLink>
+
+              <NavLink to='/Deals' className="font-poppins footer-link  fw-bold py-1" >Deals</NavLink>
+
+              <NavLink to='/Birthday' className="font-poppins footer-link  fw-bold py-1 ">Birthday Party</NavLink>
+              <NavLink to='/Gallery' className="font-poppins footer-link fw-bold py-1">Gallery</NavLink>
+              <NavLink to='/Cafe' className="font-poppins footer-link  fw-bold  py-1">Cafe</NavLink>
+              <NavLink to='/Contact-us' className="font-poppins footer-link  fw-bold  py-1">Contact</NavLink>
 
 
             </div>

@@ -94,7 +94,7 @@ const ContactUs = () => {
             <Topbar />
             <div className="top-bg"></div>
             <div className='container'>
-                <h1 className='text-blue fs-2vw pt-3 text-center'>LET'S TALK</h1>
+                {/* <h1 className='text-blue fs-2vw pt-3 text-center'>LET'S TALK</h1> */}
                 <p className=" fs-7vw text-center mx-auto w-18ch mt-4">Contact Us</p>
                 <div className="col-12 contactborder position-relative">
                     <IrrParallelogram>

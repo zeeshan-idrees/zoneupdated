@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+ import React, { useState } from "react";
 import Topbar from "../Components/Topbar";
 import HeadSection from "../Components/HomePage/Header";
 import Adventure from '../assets/img/Adventure.jpg'
@@ -44,8 +44,8 @@ const About = () => {
   return (
     <>
       <Topbar />
-      <div className="d-flex p-0 m-0"> <HeadSection img='banner about-banner' align='bottom' heading='About Thrill Zone' />
-      </div>
+      {/* <div className="d-flex p-0 m-0"> <HeadSection img='banner about-banner' align='bottom' heading='About Thrill Zone' />
+      </div> */}
       <WhatsAppButton />
       <div className="container-fluid">
 
