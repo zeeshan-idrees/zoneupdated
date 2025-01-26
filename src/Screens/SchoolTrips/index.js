@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import Topbar from "../../Components/Topbar";
 import Footer from "../../Components/Footerr";
+import collage from "../../assets/img/collage.png"
 import HeadSection from "../../Components/HomePage/Header";
-
 import schooltrip from '../../assets/img/schooltrip.jpg';
 import Schoolplan from '../../assets/img/Schoolplan.jpg';
 import playIcon from '../../assets/img/play_btn.svg'; // Your custom play icon
@@ -27,11 +27,15 @@ const SchoolTrips = () => {
         <>
             <Topbar />
             <div className="birthday_top-bg p-0 m-0">
-                <div className="d-flex ">
+                {/* <div className="d-flex ">
 
                     <HeadSection img='banner trippackage' align='bottom' />
+                </div> */}
+                <div className="d-flex w-100 p-0 m-0 h-75">
+                    <img src={collage} alt="" className="img-fluid rounded-4"  height="600px"/>
                 </div>
-<WhatsAppButton/>
+
+                <WhatsAppButton />
             </div>
             <div className="container ">
                 <Schooltrill heading='Celebrate Bday with Thrill Zone' />
@@ -41,11 +45,11 @@ const SchoolTrips = () => {
 
             <div className="bg-trips_section px-0 px-md-4 py-3 py-md-5 mb-3">
                 <div className="container">
-                  
-                        <div className="bus-image ">
-                            <img src={schooltrip}  width="100% "  alt='' />
-                        </div>
-                  
+
+                    <div className="bus-image ">
+                        <img src={schooltrip} width="100% " alt='' />
+                    </div>
+
                 </div>
             </div>
             <div className="container">
@@ -88,7 +92,7 @@ const SchoolTrips = () => {
                 <Footer />
             </section>
         </>
-    ); 
+    );
 }
 
 export default SchoolTrips;

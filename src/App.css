@@ -439,6 +439,12 @@ button.white-image-button{
   .adventure-text {
     font-size: 16px;
   }
+  li.nav-item{
+    width: 33%;
+  }
+  .navbar-expand-md .navbar-collapse{
+    align-items: baseline !important;
+  }
 }
 
 .input-feild {

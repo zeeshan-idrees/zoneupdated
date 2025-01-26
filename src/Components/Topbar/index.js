@@ -24,7 +24,7 @@ const Topbar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse row justify-content-evenly" id="navbarNavDropdown">
-                        <ul className="navbar-nav col-xl-8 ps-5 d-flex gap-3 justify-content-evenly">
+                        <ul className="navbar-nav col-xl-8  d-flex gap-3 justify-content-evenly">
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/" activeClassName="active">Home</NavLink>
                             </li>
@@ -58,7 +58,7 @@ const Topbar = () => {
                             
                         </ul>
 
-                        <div className='col-xl-2 '>
+                        <div className='col-xl-2 pt-2'>
                             <NavLink to='/Contact-us'> 
                                 <button className=" top-button rounded-4  btn btn-outline-primary">Contact Us</button>
                             </NavLink>

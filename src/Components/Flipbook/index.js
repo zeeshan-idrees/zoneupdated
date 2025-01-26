@@ -1,11 +1,12 @@
 import React from "react";
 import HTMLFlipBook from "react-pageflip";
-import frontmenu from "../../assets/img/frontmenu.jpg";
-import menu2 from "../../assets/img/menu2.jpg";
-import menu3 from "../../assets/img/menu3.jpg";
-import menu4 from "../../assets/img/menu4.jpg";
-import menu5 from "../../assets/img/menu5.jpg";
-import menu6 from "../../assets/img/menu6.jpg";
+import frontmenu from "../../assets/img/frontmenu.png";
+import menu2 from "../../assets/img/menu2.png"
+import menu3 from "../../assets/img/menu3.png";
+import menu4 from "../../assets/img/menu4.png";
+import menu5 from "../../assets/img/menu5.png";
+import menu6 from "../../assets/img/menu6.png";
+import backmenu from "../../assets/img/backmenu.jpg";
 
 
 const MenuBook = () => {
@@ -42,6 +43,11 @@ const MenuBook = () => {
  
           <img src={menu6} width="100% " alt='' />
         </div>
+        <div className="page">
+ 
+ <img src={backmenu} width="100% " alt='' />
+</div>
+        
         {/* Add more pages as needed */}
       </HTMLFlipBook>
     </div>
