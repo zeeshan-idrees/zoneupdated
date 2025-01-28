@@ -1,10 +1,10 @@
 
 import grid1 from '../assets/img/bdy1.jpg'
-import package2 from '../assets/img/package2.jpg'
-import grid3 from '../assets/img/grid3.jpg'
-import grid4 from '../assets/img/bdy2.jpg'
-import grid5 from '../assets/img/grid5.jpg'
-import grid6 from '../assets/img/grid6.jpg'
+import package2 from '../assets/img/package2.jpeg'
+import grid3 from '../assets/img/grid3.jpeg'
+import grid4 from '../assets/img/bdy2.jpg'  
+import grid5 from '../assets/img/grid5.jpeg'
+import grid6 from '../assets/img/grid6.jpeg'
 
 const ExperinceTrill = ({heading,heading2}) => {
     return (
@@ -18,9 +18,9 @@ const ExperinceTrill = ({heading,heading2}) => {
                 </div>
                 <div className="row justify-content-center row-gap-3 text-center ">
 
-                    <div className=" col-6 col-lg-4 p-1    ">
-                          <img src={grid4} alt='' className="img-fluid rounded-4 rounded-4 " />
-                    </div>
+                <div className=" col-6 col-lg-4 p-1    ">
+                            <img src={grid6} alt='' className="img-fluid rounded-4  " />
+                     </div>
                     <div className=" col-6 col-lg-4 p-1 ">
                          <img src={package2} alt='' className="img-fluid rounded-4 " />
                      </div>
@@ -33,9 +33,10 @@ const ExperinceTrill = ({heading,heading2}) => {
                     <div className=" col-6 col-lg-4 p-1    ">
                           <img src={grid5} alt='' className="img-fluid rounded-4  " />
                      </div>
-                    <div className=" col-6 col-lg-4 p-1    ">
-                            <img src={grid6} alt='' className="img-fluid rounded-4  " />
-                     </div>
+                   
+                     <div className=" col-6 col-lg-4 p-1    ">
+                          <img src={grid4} alt='' className="img-fluid rounded-4 rounded-4 " />
+                    </div>
                  </div>
             </section>
         </>

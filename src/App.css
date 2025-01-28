@@ -383,6 +383,9 @@ button.white-image-button{
   background-color:#FFFFFF !important;
   border-radius:6px;
 }
+.thrill-text{
+font-size: 42px;
+}
 @media (max-width: 768px) {
   .topBar {
     clip-path: none;
@@ -440,11 +443,16 @@ button.white-image-button{
     font-size: 16px;
   }
   li.nav-item{
-    width: 33%;
+    width: 45%;
+    padding-left: 10px;
+    padding-top: 1px;
   }
   .navbar-expand-md .navbar-collapse{
     align-items: baseline !important;
   }
+  .thrill-text{
+    font-size: 22px;
+    }
 }
 
 .input-feild {

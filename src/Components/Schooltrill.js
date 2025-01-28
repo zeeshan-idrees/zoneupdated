@@ -12,7 +12,7 @@ const ExperinceTrill = ({heading,heading2}) => {
         <>
             <section>
                 <div className="row justify-content-center text-blue text-center">
-                    <p className=" thrill-text fs-2vw fw-bold font-poppins-500 col-md-9 my-3 my-md-5 " > Host Your School Trips at Thrill Zone!</p>
+                    <p className=" thrill-text fw-bold font-poppins-500 col-md-9 my-3 my-md-5 " > Host Your School Trips at Thrill Zone!</p>
                    
                     <p className="col-md-10  fs-5 fw-normal">{heading2}
                     </p>

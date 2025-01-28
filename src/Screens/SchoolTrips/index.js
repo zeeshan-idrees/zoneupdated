@@ -3,7 +3,7 @@ import Topbar from "../../Components/Topbar";
 import Footer from "../../Components/Footerr";
 import collage from "../../assets/img/collage.png"
 import HeadSection from "../../Components/HomePage/Header";
-import schooltrip from '../../assets/img/schooltrip.jpg';
+import schooltrip from '../../assets/img/schooltrip.jpeg';
 import Schoolplan from '../../assets/img/Schoolplan.jpg';
 import playIcon from '../../assets/img/play_btn.svg'; // Your custom play icon
 import pauseIcon from '../../assets/img/pause_btn.svg'; // Your custom pause icon
@@ -32,7 +32,7 @@ const SchoolTrips = () => {
                     <HeadSection img='banner trippackage' align='bottom' />
                 </div> */}
                 <div className="d-flex w-100 p-0 m-0 h-75">
-                    <img src={collage} alt="" className="img-fluid rounded-4"  height="600px"/>
+                    <img src={collage} alt="" className="img-fluid rounded-4" height="600px" />
                 </div>
 
                 <WhatsAppButton />
@@ -41,15 +41,20 @@ const SchoolTrips = () => {
                 <Schooltrill heading='Celebrate Bday with Thrill Zone' />
             </div>
 
-            <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 my-md-5 ">School Trips Packages</div>
+            <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 ">School Trips Packages</div>
+            <div className="container">
+                <div className="row  px-0 px-md-4 py-3 py-md-5 mb-3">
+                <div className=" col-lg-6 font-poppins-400  pt-3 d-flex flex-column justify-content-center">
+                        <p className=" fs-2vw about-content text-blue text-center" >Plan Your School Trip at Thrill Zone!</p>
+                        <p className="fs-5 text-blue fw-500">Looking for the perfect destination for your next school trip? Thrill Zone is the ultimate spot for a fun and adventurous day out with your classmates!
 
-            <div className="bg-trips_section px-0 px-md-4 py-3 py-md-5 mb-3">
-                <div className="container">
-
-                    <div className="bus-image ">
+                            From exciting rides to interactive games, there's something for everyone to enjoy. Thrill Zone offers a safe, engaging, and thrilling experience for students of all ages. Let us take care of the fun while you focus on making memories with your friends!
+                        </p>
+                    </div>
+                    <div className="bus-image col-lg-6">
                         <img src={schooltrip} width="100% " alt='' />
                     </div>
-
+                   
                 </div>
             </div>
             <div className="container">
@@ -57,6 +62,7 @@ const SchoolTrips = () => {
                     <div className=" col-lg-6  text-center ">
                         <img src={Schoolplan} alt='' className="img-fluid rounded-4" />
                     </div>
+
 
                     <div className=" col-lg-6 font-poppins-400  pt-3 d-flex flex-column justify-content-center">
                         <p className=" fs-2vw about-content text-blue text-center" >Plan Your School Trip at Thrill Zone!</p>

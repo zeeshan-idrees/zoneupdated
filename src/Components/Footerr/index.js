@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/img/logo.png';
+import logothrill from '../../assets/img/logothrill.png';
 import facebook from '../../assets/img/facebook.svg'
 
 import insta from '../../assets/img/insta.jpg'
@@ -13,7 +13,7 @@ export default function index() {
         <div className="container p-2 pt-4">
           <div className="row  m-0 ps-4 justify-content-between">
             <div className="col-lg-4 col-md-6 py-4 ps-5">
-              <img className='w-50' src={logo} alt="" />
+              <img className='w-50' src={logothrill} alt="" />
               <h1 className=' fs-30  text-white  py-1'>Unleash The Thrill</h1>
               <div className="d-flex flex-wrap gap-3">
                 <a href="https://web.facebook.com/thrillzone.pk/" target="_blank">
