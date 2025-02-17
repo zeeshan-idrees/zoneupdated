@@ -1,10 +1,10 @@
 
-import grid1 from '../assets/img/cafeimg1.jpg'
-import grid2 from '../assets/img/cafeimg2.jpg'
-import grid3 from '../assets/img/cafeimg3.jpg'
-import grid4 from '../assets/img/Item1.jpg'
-import grid5 from '../assets/img/Item2.jpg'
-import grid6 from '../assets/img/trip7.jpg'
+import grid1 from '../assets/img/grid1.jpeg'
+import grid2 from '../assets/img/grid2.jpeg'
+import grid3 from '../assets/img/grid3.jpeg'
+import grid4 from '../assets/img/grid4.jpeg'
+import grid5 from '../assets/img/grid5.jpeg'
+import grid6 from '../assets/img/grid6.jpeg'
 
 
 

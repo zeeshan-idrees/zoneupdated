@@ -3,7 +3,7 @@ import Topbar from "../../Components/Topbar";
 import Footer from "../../Components/Footerr";
 import offers from "../../assets/img/offers.jpg";
 import menubanner from "../../assets/img/menubanner.jpg";
-import cafewall from "../../assets/img/cafewall.jpg";
+import cafewall from "../../assets/img/cafewall.jpeg";
 import bannernew from "../../assets/img/bannernew.jpg";
 import WhatsAppButton from "../../Components/Whatsapp";
 import playIcon from "../../assets/img/play_btn.svg"; // Your custom play icon

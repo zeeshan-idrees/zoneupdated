@@ -2,9 +2,9 @@
 import grid1 from '../assets/img/carousal2.jpg'
 import grid2 from '../assets/img/home2.jpg'
 import grid3 from '../assets/img/home3.jpg'
-import grid4 from '../assets/img/partyarea.jpg'
-import grid5 from '../assets/img/draw4.png'
-import about5 from '../assets/img/about5.jpg'
+import partyarea from '../assets/img/partyarea.jpg'
+import homegrid from '../assets/img/homegrid.jpeg'
+import about5 from '../assets/img/grid4.jpeg'
 
 
 
@@ -38,7 +38,7 @@ const ExperinceTrill = ({ heading, heading2 }) => {
 
                     <div className=" col-6 col-lg-4 p-1    ">
 
-                        <img src={grid4} alt='' className="img-fluid rounded-4  " />
+                        <img src={partyarea} alt='' className="img-fluid rounded-4  " />
 
 
                     </div>
@@ -50,7 +50,7 @@ const ExperinceTrill = ({ heading, heading2 }) => {
                     </div>
                     <div className=" col-6 col-lg-4 p-1    ">
 
-                        <img src={grid5} alt='' className="img-fluid rounded-4  " />
+                        <img src={homegrid} alt='' className="img-fluid rounded-4  " />
 
 
                     </div>
