@@ -75,7 +75,7 @@ const SchoolTrips = () => {
               ref={videoRef}
             >
               <source
-                src="https://res.cloudinary.com/dmlhsdtwp/video/upload/v1735237250/WhatsApp_Video_2024-12-26_at_4.44.51_PM_bpzafg.mp4"
+                src="https://res.cloudinary.com/dydjbwvzf/video/upload/v1739809164/Reel_05_1_1_rnpyr8.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.
