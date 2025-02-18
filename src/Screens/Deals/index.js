@@ -4,6 +4,7 @@ import Footer from "../../Components/Footerr";
 // import schooltrip from '../../assets/img/schooltrip.jpg';
 import activitybanner from '../../assets/img/activitybanner.jpg';
 import Dealspost from '../../assets/img/Dealspost.jpg';
+import pricing from '../../assets/img/pricing.jpg';
 
 import promospost from '../../assets/img/about.jpeg';
 import WhatsAppButton from "../../Components/Whatsapp";
@@ -54,8 +55,7 @@ const SchoolTrips = () => {
                 <div className=" row promo-deals ">
                    
                     <div className=" col-lg-6 font-poppins-400  pt-3 d-flex flex-column justify-content-center">
-                        <p className=" fs-2vw about-content text-blue " >
-                       Arcade Games: </p>
+                       
                         <p className="fs-5 text-blue fw-500">Get ready for a gaming adventure at Thrill Zone Arcade! From action-packed arcade games to immersive experiences, there's something for everyone. Whether you're a pro or just playing for fun, the excitement never ends. Come explore a world of entertainment where every game is a thrill! For more information, contact us at +92 328 0707853.
 
                         </p>
@@ -66,7 +66,21 @@ const SchoolTrips = () => {
                     </div>
                 </div>
             </div>
-
+            <div className="container">
+            <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 my-md-5 "> Thrill Zone Activity Pricing </div>
+                <div className="row mt-0  fw-bold justify-content-between  my-2 my-md-5">
+                <div className=" col-lg-6  text-center ">
+                        <img src={pricing} alt='' className="img-fluid rounded-4" />
+                    </div>
+                    <div className=" col-lg-6 font-poppins-400  pt-3 d-flex flex-column justify-content-center">
+                        <p className=" fs-2vw about-content text-blue text-center" >
+                           </p>
+                        <p className="fs-5 text-blue fw-500">Welcome to Thrill Zone, where fun meets fitness for all ages! Enjoy activities like trampolines, ninja courses, soft play areas, and toddler zones. Pricing starts at Rs. 999 for 1 hour or Rs. 700 for 30 minutes for the trampoline and soft play areas. The toddler area is Rs. 800 for 1 hour and Rs. 500 for 30 minutes, while the ninja course is Rs. 400 for 30 minutes. Grab our special offer of 2 hours of unlimited access for Rs. 2000. A new card costs Rs. 100. Join us for an action-packed experience!
+                        </p>
+                    </div>
+                  
+                </div>
+            </div>
             <section className=" mt-3 mt-md-5  position-relative overflow-hidden">
                 <Footer />
             </section>

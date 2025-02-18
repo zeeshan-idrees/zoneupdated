@@ -488,3 +488,11 @@ font-size: 42px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   /* Increase shadow on hover */
 }
+@media only screen and (max-width: 700px){
+  .contactborder .pad{
+      padding: 2rem 0 0 3rem !important;
+  }
+  .contactborder .pad .frst_sec{
+      padding-bottom: 3rem !important;  
+  }
+} 

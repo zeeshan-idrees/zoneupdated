@@ -107,11 +107,11 @@
 }
 
 .contactborder .pad {
-    padding: 2rem 0 0 7rem !important;
+    padding: 2rem 0 0 7rem ;
 }
 
 .contactborder .pad .frst_sec {
-    padding-bottom: 9rem !important;
+    padding-bottom: 9rem ;
 }
 
 .contact-select {
@@ -234,3 +234,4 @@
     border: 1px solid #727272;
     border-radius: 3px;
 }
+ 
