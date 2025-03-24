@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Topbar from "../../Components/Topbar";
 import Footer from "../../Components/Footerr";
-import collage from "../../assets/img/collage.png"
+import schoolbanner from "../../assets/img/schoolbanner.jpg";
 import HeadSection from "../../Components/HomePage/Header";
 import schooltrip from '../../assets/img/schooltrip.jpeg';
 import Schoolplan from '../../assets/img/Schoolplan.jpg';
@@ -27,12 +27,8 @@ const SchoolTrips = () => {
         <>
             <Topbar />
             <div className="birthday_top-bg p-0 m-0">
-                {/* <div className="d-flex ">
-
-                    <HeadSection img='banner trippackage' align='bottom' />
-                </div> */}
-                <div className="d-flex w-100 p-0 m-0 h-75">
-                    <img src={collage} alt="" className="img-fluid rounded-4" height="600px" />
+            <div className="d-flex w-100 p-0 m-0 h-75">
+                    <img src={schoolbanner} alt="" className="img-fluid rounded-4" height="600px" />
                 </div>
 
                 <WhatsAppButton />

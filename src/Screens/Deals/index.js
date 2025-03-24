@@ -1,19 +1,14 @@
 import React, { useState, useRef } from "react";
 import Topbar from "../../Components/Topbar";
 import Footer from "../../Components/Footerr";
-// import schooltrip from '../../assets/img/schooltrip.jpg';
-import activitybanner from '../../assets/img/activitybanner.jpg';
+import dealbanner from '../../assets/img/dealbanner.jpg';
 import Dealspost from '../../assets/img/Dealspost.jpg';
 import pricing from '../../assets/img/pricing.jpg';
-
-import promospost from '../../assets/img/about.jpeg';
+import arcagdegames from '../../assets/img/arcagdegames.jpg';
 import WhatsAppButton from "../../Components/Whatsapp";
-
 const SchoolTrips = () => {
     const [isPlaying, setIsPlaying] = useState(true);
     const videoRef = useRef(null);
-
-
     const togglePlayPause = () => {
         if (isPlaying) {
             videoRef.current.pause();
@@ -28,13 +23,12 @@ const SchoolTrips = () => {
             <div className="birthday_top-bg p-0 m-0">
                 <div className="d-flex ">
                     <div className="deals-image ">
-                        <img src={activitybanner} width="100% " alt='' />
+                        <img src={dealbanner} width="100% " alt='' />
                     </div>
                 </div>
             </div>
             <WhatsAppButton/>
-            
-        
+
             <div className="container">
             <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 my-md-5 "> Thrill Zone Special Offers! </div>
                 <div className="row mt-0  fw-bold justify-content-between  my-2 my-md-5">
@@ -62,7 +56,7 @@ const SchoolTrips = () => {
                      
                     </div>
                     <div className=" col-lg-6  ">
-                        <img src={promospost} width="100% " alt='' />
+                        <img src={arcagdegames} width="100% " alt='' />
                     </div>
                 </div>
             </div>
@@ -87,5 +81,4 @@ const SchoolTrips = () => {
         </>
     );
 }
-
 export default SchoolTrips;

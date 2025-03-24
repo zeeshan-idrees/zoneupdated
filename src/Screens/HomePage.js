@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import Topbar from "../Components/Topbar";
-import offers from "../assets/img/offers.jpg"
+
 import schoolbus from "../assets/img/schoolbus.png";
-import timings from "../assets/img/timings.jpeg"
+
 import aboutbanner from "../assets/img/aboutbanner.jpg";
 import Footer from "../Components/Footerr";
 import Carousel from "../Components/Slider";
@@ -15,6 +15,8 @@ import pauseIcon from "../assets/img/pause_btn.svg"; // Your custom pause icon
 
 
 import IrrParallelogram from "../Components/IrrParallelogram/IrrParallelogram";
+
+
 const HomePage = () => {
   const [isPlaying, setIsPlaying] = useState(true);
   const videoRef = useRef(null);
@@ -55,6 +57,7 @@ const HomePage = () => {
         <p className=" fs-2vw about-content text-blue text-center pb-3">
            Plan Your School Trip at Thrill Zone! 
         </p>
+    
         <div className="bg-trips_section px-0 px-md-4 py-3 py-md-4 mb-5 ">
           <div className="container ">
             <div className="row school-area_section">

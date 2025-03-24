@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import HeadSection from "../../Components/HomePage/Header";
 import Topbar from "../../Components/Topbar";
 import Birthdytrill from "../../Components/Birthdytrill";
-import Birthdaypost from "../../assets/img/Birthdaypost.jpg";
+import birthdaybanner from "../../assets/img/birthdaybanner.jpg";
 import package1 from "../../assets/img/package1.png";
 import playIcon from "../../assets/img/play_btn.svg"; // Your custom play icon
 import pauseIcon from "../../assets/img/pause_btn.svg"; // Your custom pause icon
@@ -27,9 +27,9 @@ const Gallery = () => {
       <Topbar />
       <div className="text-blue">
         <div className="birthday_top-bg p-0 m-0">
-          <div className="d-flex ">
-            <HeadSection img="banner party" align="bottom" />
-          </div>
+        <div className="d-flex ">
+          <img src={birthdaybanner} width="100% " alt="" />
+        </div>
         </div>
         <WhatsAppButton />
         <div className="container p-0">
@@ -40,7 +40,6 @@ const Gallery = () => {
             </div>
 
             <div className="row justify-content-center g-5">
-
 
               <div className="school-trip_packages position-relative col-sm-12 col-lg-4">
                 <div className="package-image">
@@ -107,37 +106,7 @@ const Gallery = () => {
               </div>
             </div>
 
-            {/* <section className="pb-0 pb-md-5 text-blue font-poppins-500 pt-0 pt-md-5">
-              <div className="row mt-4 fw-bold justify-content-between pt-3 my-5">
-                <div className=" col-lg-6  text-center ">
-                  <img
-                    src={Birthdaypost}
-                    alt=""
-                    className="img-fluid rounded-4"
-                  />
-                </div>
-
-                <div className=" col-lg-6 font-poppins-400  pt-3 d-flex flex-column justify-content-center">
-                  <p className="bd-right_text about-content text-center">
-                    Celebrate Your Bday at Thrill Zone with 15% Off
-                  </p>
-                  <p className=" fs-sm-3 fs-5 fw-400">
-                    Celebrate Your Birthday at Thrill Zone! Make your special
-                    day even more exciting with a birthday celebration at Thrill
-                    Zone. We have the perfect setup to make your party
-                    unforgettable! Exclusive Offer: Enjoy a 15% discount on all
-                    birthday packages from Monday to Thursday! Why wait for the
-                    weekend when the fun starts now? Balloons, decorations, and
-                    a fun atmosphere are all set to give you the most memorable
-                    birthday ever. Book your slot today and let us handle the
-                    fun while you make memories! Location: Thrill Zone, Penta
-                    Square Mall, DHA Phase 5, Lahore.
-                  </p>
-                </div>
-              </div>
-            </section> */}
-
-            <section className=" mt-5 ">
+          <section className=" mt-5 ">
               <div className="videoClip borderParallelogram position-relative  ">
                 <IrrParallelogram>
                   <video
