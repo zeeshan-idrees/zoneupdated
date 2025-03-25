@@ -13,25 +13,25 @@ const ContactUs = () => {
         to_name: '',
         to_email: '',
         phoneNumber: '',
-        service: '',
+        message: '',
     });
     const [loading, setLoading] = useState(false); // Loader state
 
     const selectBoxRef = useRef(null);
 
-    const items = [
-        { id: 'item1', title: 'Item 1' },
-        { id: 'item2', title: 'Item 2' },
-        { id: 'item3', title: 'Item 3' },
-        { id: 'item4', title: 'Item 4' },
-        { id: 'item5', title: 'Item 5' }
-    ];
+    // const items = [
+    //     { id: 'item1', title: 'Item 1' },
+    //     { id: 'item2', title: 'Item 2' },
+    //     { id: 'item3', title: 'Item 3' },
+    //     { id: 'item4', title: 'Item 4' },
+    //     { id: 'item5', title: 'Item 5' }
+    // ];
 
-    const handleItemClick = (title) => {
-        setSelectedItem(title);
-        setIsOpen(false);
-        setFormData({ ...formData, service: title });
-    };
+    // const handleItemClick = (title) => {
+    //     setSelectedItem(title);
+    //     setIsOpen(false);
+    //     setFormData({ ...formData, service: title });
+    // };
 
     const handleBlur = (event) => {
         if (!selectBoxRef.current.contains(event.relatedTarget)) {
@@ -44,6 +44,8 @@ const ContactUs = () => {
     };
 
     const handleChange = (e) => {
+       
+
         const { name, value } = e.target;
         setFormData({
             ...formData,
@@ -52,7 +54,7 @@ const ContactUs = () => {
     };
 
     const validateForm = () => {
-        if (!formData.to_name || !formData.to_email || !formData.phoneNumber || !formData.service) {
+        if (!formData.to_name || !formData.to_email || !formData.phoneNumber || !formData.message) {
             message.error('All fields are required!');
             return false;
         }
@@ -79,7 +81,7 @@ const ContactUs = () => {
                 to_name: '',
                 to_email: '',
                 phoneNumber: '',
-                service: '',
+                message: '',
             });
         })
         .catch((error) => {
@@ -106,7 +108,7 @@ const ContactUs = () => {
                             <div className="row pad">
                                 <div className="col-12 col-md-6 frst_sec pt-5 mt-4 px-0">
                                     <p className="fs-3vw text-white">Contact Us</p>
-                                    <p className='font-poppins fs-16 text-white-80'>Sed ut perspiciatis unde</p>
+                                    {/* <p className='font-poppins fs-16 text-white-80'>Sed ut perspiciatis unde</p> */}
 
                                     <label className='form-label text-white fw-500 font-poppins fs-14'>First Name</label>
                                     <input
@@ -140,10 +142,20 @@ const ContactUs = () => {
                                         onChange={handleChange}
                                         required
                                     />
+                                    <label className='form-label text-white fw-500 font-poppins fs-14'>Message</label>
+                                    <textarea
+                                    column="8"
+                                    rows="4"
+                                        type="text"
+                                        placeholder="Enter your phone number"
+                                        className='form-control bg-transparent text-white input-feild font-poppins fw-400'
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        required
+                                    />
 
-                         
-
-                                    <button type="submit" className="white-image-button text-nowrap px-5 text-blue font-poppins-500 bg-transparent border-0 text-center fs-16 d-inline-block mt-4">
+                                    <button type="submit" className="white-image-button text-nowrap px-5 text-blue font-poppins-500 bg-transparent border-0 text-center fs-16 d-inline-block my-3">
                                         {loading ? <Spin className='pe-2' spinning={loading}></Spin> : null}Contact Us
                                     </button>
                                 </div>
@@ -163,4 +175,3 @@ const ContactUs = () => {
 }
 
 export default ContactUs;
-
