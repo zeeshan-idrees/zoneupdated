@@ -4,7 +4,7 @@ const PopupModal = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsOpen(false), 6000); // Auto close after 5 seconds
+    const timer = setTimeout(() => setIsOpen(false), 10000); // Auto close after 5 seconds
     return () => clearTimeout(timer);
   }, []);
 

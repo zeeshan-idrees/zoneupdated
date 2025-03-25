@@ -62,31 +62,35 @@ const ContactUs = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         if (!validateForm()) return;
-
+    
         setLoading(true); // Start loading
+        console.log("Form data: ", formData); // Log form data for debugging
+    
         emailjs.send(
             'service_klvwyof',
             'template_tkjl33w',
             formData,
             'O2jj5boRYFHExFpJL'
         )
-            .then((response) => {
-                console.log('SUCCESS!', response.status, response.text);
-                message.success('Thank you! Your booking request has been successfully sent. We will get back to you shortly.'); // Success message
-                setFormData({
-                    to_name: '',
-                    to_email: '',
-                    phoneNumber: '',
-                    service: '',
-                });
-            }, (error) => {
-                console.log('FAILED...', error);
-                message.error('Oops! Something went wrong while sending your booking request. Please try again or contact our support.'); // Failure message
-            })
-            .finally(() => {
-                setLoading(false); // Stop loading
+        .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            message.success('Thank you! Your booking request has been successfully sent. We will get back to you shortly.');
+            setFormData({
+                to_name: '',
+                to_email: '',
+                phoneNumber: '',
+                service: '',
             });
+        })
+        .catch((error) => {
+            console.log('FAILED...', error); // Log error for debugging
+            message.error('Oops! Something went wrong while sending your booking request. Please try again or contact our support.');
+        })
+        .finally(() => {
+            setLoading(false); // Stop loading
+        });
     };
+    
 
 
     return (
@@ -159,3 +163,4 @@ const ContactUs = () => {
 }
 
 export default ContactUs;
+
