@@ -4,26 +4,6 @@
     background-position-x: center !important;
 }
 
-.home-banner {
-    background: url('../../assets/img/comingsoon.png') no-repeat;
-}
-
-.party {
-    background: url('../../assets/img/school.jpg') no-repeat;
-}
-
-.gallery {
-    background: url('../../assets/img/gallery.jpg') no-repeat;
-}
-
-.Cafe-banner {
-    background: url('../../assets/img/Cafe.jpg') no-repeat;
-}
-
-.schooltrip {
-    background: url('../../assets/img/school.jpg') no-repeat;
-}
-
 .center {
     align-self: center;
 }

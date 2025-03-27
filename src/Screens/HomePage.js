@@ -50,7 +50,7 @@ const HomePage = () => {
           <Birthday />
         </section>
         <p className="  about-content text-blue text-center pb-3">
-           Plan Your School Trip at Thrill Zone! 
+           Plan Your School Trip at Thrill Zone
         </p>
     
         <div className="bg-trips_section px-0 px-md-4 py-3 py-md-4 mb-5 ">
@@ -82,6 +82,11 @@ const HomePage = () => {
                 <img src={schoolbus} alt="" className="img-fluid rounded-4" />
               </div>
             </div>
+            {/* <div className="">
+         
+                <img src={schoolbus} alt="" className="img-fluid rounded-4" />
+              </div> */}
+          
           </div>
         </div>
     

@@ -295,7 +295,7 @@
 }
 
 .about-content {
-  max-width: 600px;
+  max-width: 350px;
   margin   : 0 auto;
    font-family: "Shine Bubble", Sans-serif;
    font-size: 34px;
@@ -406,7 +406,7 @@ font-size: 42px;
   font-family: "Shine Bubble", Sans-serif;
 }
 ul.dropdown-menu.show {
-  margin-top: 8px;
+    margin-top: 8px;
 }
 
 
