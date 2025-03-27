@@ -8,6 +8,7 @@ import gallery6 from '../../assets/img/gallery6.jpg';
 import gallery7 from '../../assets/img/gallery7.jpg';
 import gallery8 from '../../assets/img/gallery8.jpg';
 import gallery9 from '../../assets/img/gallery9.jpg';
+import trampolineimg from '../../assets/img/trampolineimg.png';
 import gallerybanner from '../../assets/img/gallerybanner.jpg';
 import { useState, useRef } from "react";
 import Footer from "../../Components/Footerr";
@@ -38,6 +39,21 @@ const Gallery = () => {
                     </div>
                 </div>
                 <WhatsAppButton />
+                <div className="gallery-heading text-blue text-center  fw-bold  my-4 ">Jump Into Fun at Our Trampoline Park</div>
+            <div className="container">
+                <div className="row  px-0 px-md-4  mb-3">
+                    <div className=" col-lg-6 font-poppins-400  pt-3 d-flex flex-column justify-content-center">
+                      
+                        <p className="fs-5 text-blue fw-500 school-content">Experience non-stop excitement at Thrill Zone’s Trampoline Park! Jump, flip, and soar to new heights on our Super Trampoline, designed for thrill-seekers of all ages. Whether you're a pro jumper or just looking to have fun, our trampoline park promises hours of laughter and adventure. Perfect for families, groups, or solo fun – get ready to defy gravity and make unforgettable memories!
+                        </p>
+                    </div>
+                    <div className="bus-image col-lg-6">
+                        <img src={trampolineimg} width="100% " alt='' />
+                    </div>
+
+                </div>
+            </div>
+            <div className="gallery-heading text-blue text-center  fw-bold  my-4 ">Our Gallery</div>
                 <section className="container">
                     <div className="row pt-3 my-3 justify-content-center text-center ">
                         <div className="col-md-4 col-4 p-1 ">

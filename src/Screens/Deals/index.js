@@ -36,7 +36,7 @@ const SchoolTrips = () => {
                         <img src={Dealspost} alt='' className="img-fluid rounded-4" />
                     </div>
                     <div className=" col-lg-6 font-poppins-400  pt-3 d-flex flex-column justify-content-center">
-                        <p className=" fs-2vw about-content text-blue text-center" >
+                        <p className="  about-content text-blue text-center" >
                            </p>
                         <p className="fs-5 text-blue fw-500">Get ready to boost your Thrill Zone experience with unbeatable top-up and recharge deals! Whether you're topping up for the first time or recharging your card, take advantage of these amazing offers:
                         </p>
@@ -67,7 +67,7 @@ const SchoolTrips = () => {
                         <img src={pricing} alt='' className="img-fluid rounded-4" />
                     </div>
                     <div className=" col-lg-6 font-poppins-400  pt-3 d-flex flex-column justify-content-center">
-                        <p className=" fs-2vw about-content text-blue text-center" >
+                        <p className=" about-content text-blue text-center" >
                            </p>
                         <p className="fs-5 text-blue fw-500">Welcome to Thrill Zone, where fun meets fitness for all ages! Enjoy activities like trampolines, ninja courses, soft play areas, and toddler zones. Pricing starts at Rs. 999 for 1 hour or Rs. 700 for 30 minutes for the trampoline and soft play areas. The toddler area is Rs. 800 for 1 hour and Rs. 500 for 30 minutes, while the ninja course is Rs. 400 for 30 minutes. Grab our special offer of 2 hours of unlimited access for Rs. 2000. A new card costs Rs. 100. Join us for an action-packed experience!
                         </p>

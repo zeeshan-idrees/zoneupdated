@@ -1,19 +1,14 @@
 import React, { useState, useRef } from "react";
 import Topbar from "../Components/Topbar";
-
 import schoolbus from "../assets/img/schoolbus.png";
-
 import aboutbanner from "../assets/img/aboutbanner.jpg";
 import Footer from "../Components/Footerr";
 import Carousel from "../Components/Slider";
 import ExperinceTrill from "../Components/ExperienceTrill";
 import Birthday from "../Components/BirthdayParties";
 import WhatsAppButton from "../Components/Whatsapp";
-
 import playIcon from "../assets/img/play_btn.svg"; // Your custom play icon
 import pauseIcon from "../assets/img/pause_btn.svg"; // Your custom pause icon
-
-
 import IrrParallelogram from "../Components/IrrParallelogram/IrrParallelogram";
 
 
@@ -51,10 +46,10 @@ const HomePage = () => {
         <section className="homeCarousel py-3 py-md-5 mt-5">
           <Carousel />
         </section>
-        <section className="py-3 py-md-5 container">
+        <section className="py-3  container">
           <Birthday />
         </section>
-        <p className=" fs-2vw about-content text-blue text-center pb-3">
+        <p className="  about-content text-blue text-center pb-3">
            Plan Your School Trip at Thrill Zone! 
         </p>
     
@@ -89,27 +84,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="container">
-        {/* <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 my-md-5 ">
-        Thrill Zone  Timings
-        </div> */}
-        {/* <div className="row mt-0 mt-md-5 fw-bold justify-content-between my-2 my-md-5">
-          <div className=" col-lg-6  text-center ">
-            <img src={timings} alt="" className="img-fluid rounded-4" />
-          </div>
-
-          <div className=" col-lg-6 font-poppins-400  pt-3 d-flex flex-column justify-content-center">
-            <p className=" fs-2vw about-content text-blue text-center">
-              Thrill Café - Now Open at Penta Square Mall!
-            </p>
-            <p className="fs-5 text-blue fw-500">
-              We're here to fuel your daily grind, one sip at a time! ☕ Whether
-              you're stopping by for a quick coffee break or catching up with
-              friends, we’ve got the perfect brew for you.{" "}
-            </p>
-          </div>
-        </div> */}
-      </div>
+    
         <section className="py-3 h-50 py-md-5">
         <div className="videoClip borderParallelogram position-relative  ">
           <IrrParallelogram>

@@ -1,5 +1,5 @@
-import React, { useState, useRef } from "react";
-import HeadSection from "../../Components/HomePage/Header";
+import React, { useState, useRef } from "react"
+
 import Topbar from "../../Components/Topbar";
 import Birthdytrill from "../../Components/Birthdytrill";
 import birthdaybanner from "../../assets/img/birthdaybanner.jpg";
@@ -27,9 +27,9 @@ const Gallery = () => {
       <Topbar />
       <div className="text-blue">
         <div className="birthday_top-bg p-0 m-0">
-        <div className="d-flex ">
-          <img src={birthdaybanner} width="100% " alt="" />
-        </div>
+          <div className="d-flex ">
+            <img src={birthdaybanner} width="100% " alt="" />
+          </div>
         </div>
         <WhatsAppButton />
         <div className="container p-0">
@@ -38,9 +38,7 @@ const Gallery = () => {
             <div className="birthday-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-3 my-md-4 ">
               Birthday Packages
             </div>
-
             <div className="row justify-content-center g-5">
-
               <div className="school-trip_packages position-relative col-sm-12 col-lg-4">
                 <div className="package-image">
                   <img src={package1} alt="" width="290px" height="370px" />
@@ -58,15 +56,13 @@ const Gallery = () => {
                       </li>
                       <li className="fs-18 text-white">Credit Limit 4,000</li>
                       <li className="fs-18 text-white"> Magic show & Drink Free Per Person.</li>
-
                     </ul>
-
                   </div>
                 </div>
               </div>
               <div className="school-trip_packages position-relative col-sm-12 col-lg-4">
                 <div className="package-image">
-                  <img src={package1} alt="" width="290px"  height="370px" />
+                  <img src={package1} alt="" width="290px" height="370px" />
                 </div>
                 <div className="package1-data">
                   <h4 className=" package-heading-2 text-center">Silver</h4>
@@ -76,7 +72,6 @@ const Gallery = () => {
                       <li className="fs-18 text-white"> 3,900 Per Person</li>
                       <li className="fs-18 text-white"> Duration: 2 Hrs</li>
                       <li className="fs-18 text-white">
-
                         Valid for Trampoline, Ninja & SoftPla
                       </li>
                       <li className="fs-18 text-white">Credit Limit 3,000</li>
@@ -86,7 +81,7 @@ const Gallery = () => {
               </div>
               <div className="school-trip_packages position-relative col-sm-12 col-lg-4">
                 <div className="package-image">
-                  <img src={package1} alt="" width="290px"  height="370px" />
+                  <img src={package1} alt="" width="290px" height="370px" />
                 </div>
                 <div className="package1-data">
                   <h4 className=" package-heading-2 text-center">ADD ON </h4>
@@ -96,17 +91,16 @@ const Gallery = () => {
                       <li className="fs-18 text-white"> Magic Show : Rs 9,500 | Pinnata Rs: 8,000</li>
                       <li className="fs-18 text-white"> Duration: 2.5 Hrs</li>
                       <li className="fs-18 text-white">
-                     Photography Schoot with Frame 10 to 15pc or 2 vidoes 20k
+                        Photography Schoot with Frame 10 to 15pc or 2 vidoes 20k
                       </li>
                       <li className="fs-18 text-white">Venue Charges 20k</li>
                     </ul>
-                   
                   </div>
                 </div>
               </div>
             </div>
-
-          <section className=" mt-5 ">
+           
+            <section className=" mt-5 ">
               <div className="videoClip borderParallelogram position-relative  ">
                 <IrrParallelogram>
                   <video
@@ -134,26 +128,6 @@ const Gallery = () => {
                 </IrrParallelogram>
               </div>
             </section>
-
-            {/* <section>
-                        <BlueParallogram>
-                            <p className="font-poppins-500 fw-bold text-black px-2 mb-0 ">Games</p>
-                        </BlueParallogram>
-                    </section> 
-
-                </div>
-                    <p className="font-poppins  fw-bold fs-3vw text-center  mt-5" >PRICING FOR BIRTHDAY PARTY</p>
-               
-                <div className="d-flex justify-content-center">
-                    <div className="birthday-pricing col-12 col-lg-4 d-flex justify-content-center">
-                        <img src={birthdayplan} />
-                    </div>
-                     <div className="birthday-pricing col-12 col-lg-4">
-                        <img src={plan1} />
-                    </div>
-                    <div className="birthday-pricing col-12 col-lg-4">
-                        <img src={plan2} />
-                    </div>  */}
           </div>
         </div>
         <section className="mt-5 position-relative overflow-hidden">

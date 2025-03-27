@@ -297,6 +297,12 @@
 .about-content {
   max-width: 600px;
   margin   : 0 auto;
+   font-family: "Shine Bubble", Sans-serif;
+   font-size: 34px;
+}
+.school-content{
+  font-family: "Shine Bubble", Sans-serif;
+  line-height: 35px;
 }
 
 .memories-section {
@@ -313,6 +319,9 @@
 
 .adventure-text {
   font-size: 18px;
+}
+.thrill-gallery{
+  font-family: "Shine Bubble", Sans-serif;
 }
 
 /* General nav styles */
@@ -383,6 +392,24 @@ button.white-image-button{
 .thrill-text{
 font-size: 42px;
 }
+.introduction-text{
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Shine Bubble", Sans-serif;
+}
+.introduction-heading{
+  font-family: "Shine Bubble", Sans-serif;
+}
+.gallery-heading{
+  font-size: 32px;
+
+  font-family: "Shine Bubble", Sans-serif;
+}
+ul.dropdown-menu.show {
+  margin-top: 8px;
+}
+
+
 @media (max-width: 768px) {
   .topBar {
     clip-path: none;

@@ -36,16 +36,14 @@ const SchoolTrips = () => {
       <WhatsAppButton />
 
       <div className="container">
-        {/* <div className="trip-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-4 my-md-5 ">
-          Cafe Timings
-        </div> */}
+       
         <div className="row mt-0 mt-md-5 fw-bold justify-content-between my-2 my-md-5">
           <div className=" col-lg-6  text-center ">
             <img src={offers} alt="" className="img-fluid rounded-4" />
           </div>
 
           <div className=" col-lg-6 font-poppins-400  pt-3 d-flex flex-column justify-content-center">
-            <p className=" fs-2vw about-content text-blue text-center">
+            <p className="  about-content text-blue text-center">
               Thrill Café by illy
             </p>
             <p className="fs-5 text-blue fw-500">

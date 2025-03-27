@@ -39,7 +39,7 @@ const ExperinceTrill = ({heading,heading2}) => {
                      </div>
                  </div>
             </section>
-        </>
+        </> 
     );
 }
 
