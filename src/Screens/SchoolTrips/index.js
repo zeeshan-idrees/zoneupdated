@@ -2,12 +2,8 @@ import React, { useState, useRef } from "react";
 import Topbar from "../../Components/Topbar";
 import Footer from "../../Components/Footerr";
 import schoolbanner from "../../assets/img/schoolbanner.jpg";
-import HeadSection from "../../Components/HomePage/Header";
 import schooltrip from '../../assets/img/schooltrip.jpeg';
 import Schoolplan from '../../assets/img/Schoolplan.jpg';
-import playIcon from '../../assets/img/play_btn.svg'; // Your custom play icon
-import pauseIcon from '../../assets/img/pause_btn.svg'; // Your custom pause icon
-import IrrParallelogram from "../../Components/IrrParallelogram/IrrParallelogram";
 import Schooltrill from "../../Components/Schooltrill";
 import WhatsAppButton from "../../Components/Whatsapp";
 const SchoolTrips = () => {

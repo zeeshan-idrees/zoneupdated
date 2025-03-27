@@ -1,8 +1,8 @@
 
 import grid2 from '../assets/img/home2.jpg'
 import grid3 from '../assets/img/home3.jpg'
-import partyarea from '../assets/img/partyarea.jpg'
-import birthdayzone_6 from '../assets/img/birthdayzone_6.JPG';
+import birthdayzone_4 from '../assets/img/birthdayzone_4.JPG'
+import mainimg from '../assets/img/mainimg.jpg';
 import about5 from '../assets/img/grid4.jpeg'
 import birthdayzone_5 from '../assets/img/birthdayzone_5.JPG';
 
@@ -18,6 +18,9 @@ const ExperinceTrill = ({ heading, heading2 }) => {
                     </p>
                 </div>
                 < div className="row justify-content-center row-gap-3 text-center ">
+                 <div className=" col-6 col-lg-4 p-1    ">
+                        <img src={mainimg} alt='' className="img-fluid rounded-4 " />
+                    </div>
                     <div className=" col-6 col-lg-4 p-1    ">
                         <img src={grid2} alt='' className="img-fluid rounded-4 " />
                     </div>
@@ -31,7 +34,7 @@ const ExperinceTrill = ({ heading, heading2 }) => {
 
                     <div className=" col-6 col-lg-4 p-1    ">
 
-                        <img src={partyarea} alt='' className="img-fluid rounded-4  " />
+                        <img src={birthdayzone_4} alt='' className="img-fluid rounded-4  " />
 
 
                     </div>
