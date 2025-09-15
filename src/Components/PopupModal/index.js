@@ -4,7 +4,7 @@ const PopupModal = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsOpen(false), 10000); // Auto close after 5 seconds
+    const timer = setTimeout(() => setIsOpen(false), 1000000); // Auto close after 5 seconds
     return () => clearTimeout(timer);
   }, []);
 
@@ -41,12 +41,11 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    zIndex: 1000,
+    zIndex: 10000000,
   },
   modal: {
     position: 'relative', // Add relative positioning to position the close button
     // backgroundColor: '#fff',
-    padding: '30px 0px',
     borderRadius: '10px',
     boxShadow: '0px 0px 15px rgba(0, 0, 0, 0.3)',
     maxWidth: '400px',
@@ -59,7 +58,7 @@ const styles = {
   },
   closeButton: {
     position: 'absolute', // Make the button float in the modal
-    top: '20px',
+    top: '0px',
     right: '15px',
     fontSize: '30px',
     cursor: 'pointer',

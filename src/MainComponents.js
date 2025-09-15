@@ -1,12 +1,11 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import { Suspense, from } from 'react';
+import { Suspense, from, lazy } from 'react';
 import ScrollToTop from './Components/Scrolltotop/ScrolltoTop';
 import { Spin } from 'antd';
 
 // from load components
 
-import HomePage from'./Screens/HomePage';
-import About from './Screens/About';
+
 import Gallery  from'./Screens/Gallery';
 import Birthday  from'./Screens/Birthday';
 import ContactUs  from'./Screens/ContactUs';
@@ -17,6 +16,7 @@ import Menu  from './Screens/Menu';
 
 
 
+const HomePage = lazy(() => import('./Screens/HomePage'));
 const MainComponents = () => {
     return (
         <>
@@ -25,7 +25,6 @@ const MainComponents = () => {
                     <Suspense fallback={<div className='d-flex justify-content-center align-items-center vh-100' ><Spin /></div>}>
                         <Routes>
                             <Route path='/' element={<HomePage />} />
-                            <Route path='/About' element={<About />} />
                             <Route path='/Gallery' element={<Gallery />} />
                             <Route path='/Birthday' element={<Birthday />} />
                             <Route path='/Contact-us' element={<ContactUs />} />

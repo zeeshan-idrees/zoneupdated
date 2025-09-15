@@ -9,8 +9,8 @@ import AnnouncementBar from './Components/AnnouncementBar';
 function App() {
   return (
 <div className=''>
+      {/* <PopupModal/> */}
       <MainComponents/>
-      <PopupModal/>
       <AnnouncementBar/>
       </div>
   

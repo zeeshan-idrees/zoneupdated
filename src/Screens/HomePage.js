@@ -1,7 +1,9 @@
 import React, { useState, useRef } from "react";
 import Topbar from "../Components/Topbar";
-import schoolbus from "../assets/img/schoolbus.png";
+import schoolactivity from "../assets/img/schoolactivity.jpg";
+import schoolactivity_mobile from "../assets/img/schoolactivity_mobile.jpg";
 import aboutbanner from "../assets/img/aboutbanner.jpg";
+import aboutbanner_mobile from "../assets/img/aboutbanner_mobile.jpg";
 import Footer from "../Components/Footerr";
 import Carousel from "../Components/Slider";
 import ExperinceTrill from "../Components/ExperienceTrill";
@@ -27,14 +29,17 @@ const HomePage = () => {
 
   return (
     <>
-      {" "}
-      <Topbar />
-      <div className="container-fluid p-0 ">
+
+      {<Topbar/>}
+      {<div className="container-fluid p-0 ">
         <div>
           <div className="d-flex w-100 p-0 m-0 ">
-          <img src={aboutbanner} alt="" className="img-fluid rounded-4" />
+            <img src={aboutbanner} alt="" className="img-fluid rounded-4 d-none d-sm-block" />
           </div>
-          <WhatsAppButton/>
+          <div className="d-flex w-100 container">
+            <img src={aboutbanner_mobile} alt="" className="img-fluid rounded-4 d-block d-sm-none " />
+          </div>
+          <WhatsAppButton />
           <div className="container bg-white">
             <ExperinceTrill
               heading="EXPERIENCE A NEW THRILL"
@@ -42,7 +47,6 @@ const HomePage = () => {
             />
           </div>
         </div>
-        
         <section className="homeCarousel py-3 py-md-5 mt-5">
           <Carousel />
         </section>
@@ -50,73 +54,45 @@ const HomePage = () => {
           <Birthday />
         </section>
         <p className="  about-content text-blue text-center pb-3">
-           Plan Your School Trip at Thrill Zone
+          Plan Your School Trip at Thrill Zone
         </p>
-    
-        <div className="bg-trips_section px-0 px-md-4 py-3 py-md-4 mb-5 ">
-          <div className="container ">
-            <div className="row school-area_section">
-              <div className="home-trips_section col-12 col-md-6  align-self-center">
-                <p className="font-poppins-400 text-yellow fs-30 fw-700">
-                  Attraction Include :
-                </p>
-                <ul>
-                  <li className="font-poppins-400 text-white fs-28">
-                    Soft Play Area
-                  </li>
-                  <li className="font-poppins-400 text-white fs-28">
-                    Trampoline Park
-                  </li>
-                  <li className="font-poppins-400 text-white fs-28">
-                    Ninja Course
-                  </li>
-                  <li className="font-poppins-400 text-white fs-28">
-                    Ninja Course
-                  </li>
-                  <li className="font-poppins-400 text-white fs-28">
-                    Toddler Area
-                  </li>
-                </ul>
-              </div>
-              <div className="col-12 col-md-6">
-                <img src={schoolbus} alt="" className="img-fluid rounded-4" />
-              </div>
-            </div>
-            {/* <div className="">
-         
-                <img src={schoolbus} alt="" className="img-fluid rounded-4" />
-              </div> */}
-          
+        <div className="container">
+        <div className="d-flex w-100 p-0 m-0 ">
+            <img src={schoolactivity} alt="" className="img-fluid rounded-4 d-none d-sm-block" />
           </div>
-        </div>
-    
+        <div className="d-flex w-100 p-0 m-0 ">
+            <img src={schoolactivity_mobile} alt="" className="img-fluid rounded-4  d-block d-sm-none" />
+          </div>
+        </div> 
+
         <section className="py-3 h-50 py-md-5">
-        <div className="videoClip borderParallelogram position-relative  ">
-          <IrrParallelogram>
-            <video
-              style={{ height: "100%" }}
-              className="clip-path-video w-100"
-              autoPlay
-           
-              loop
-              ref={videoRef}
-            >
-              <source
-                src="https://res.cloudinary.com/dydjbwvzf/video/upload/v1735730831/Reel_resize_fd4eev.mp4"
-                type="video/mp4"
-              />
-              Your browser does not support the video tag.
-            </video>
-            <button className="video-control-btn" onClick={togglePlayPause}>
-              <img src={isPlaying ? pauseIcon : playIcon} alt="Play/Pause" />
-            </button>
-          </IrrParallelogram>
-        </div>
-      </section>
-      <section className=" mt-3 mt-md-5  position-relative overflow-hidden">
-        <Footer />
-      </section>
+          <div className="videoClip borderParallelogram position-relative  ">
+            <IrrParallelogram>
+              <video
+                style={{ height: "100%" }}
+                className="clip-path-video w-100"
+                autoPlay
+
+                loop
+                ref={videoRef}
+              >
+                <source
+                  src="https://res.cloudinary.com/dydjbwvzf/video/upload/v1735730831/Reel_resize_fd4eev.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <button className="video-control-btn" onClick={togglePlayPause}>
+                <img src={isPlaying ? pauseIcon : playIcon} alt="Play/Pause" />
+              </button>
+            </IrrParallelogram>
+          </div>
+        </section>
+        <section className=" mt-3 mt-md-5  position-relative overflow-hidden">
+          <Footer />
+        </section>
       </div>
+      }
     </>
   );
 };
