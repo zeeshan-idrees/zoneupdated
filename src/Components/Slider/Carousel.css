@@ -1,6 +1,5 @@
 .carousel-container {
-    /* width: 80%;
-    margin: 0 auto; */
+
     position: relative;
     /* Add position relative to the container */
     background: url('../../assets/img/caroselbg.jpg') no-repeat;
@@ -84,28 +83,19 @@
     .carousel-container {
         width: 100%;
     }
-
-    /* .slick-slide:not(.slick-center) {
-        transform: scale(0.9);
-    }
-
-    .slick-center {
-        transform: scale(1.1) !important;
-    } */
-
-    .homeCarousel .slick-prev,
+.homeCarousel .slick-prev,
     .homeCarousel .slick-next {
         font-size: 1.5em;
     }
 
     .homeCarousel .slick-prev {
         left: 18% !important;
-        /* Adjust for smaller screens */
+ 
     }
 
     .homeCarousel .slick-next {
         right: 18% !important;
-        /* Adjust for smaller screens */
+   
     }
 }
 

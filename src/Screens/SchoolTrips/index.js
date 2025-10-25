@@ -1,9 +1,10 @@
 import React, { useState, useRef } from "react";
 import Topbar from "../../Components/Topbar";
 import Footer from "../../Components/Footerr";
-import schoolbanner from "../../assets/img/schoolbanner.jpg";
+import schoolbanner from "../../assets/img/schoolbanner.jpeg";
+import schoolbanner_mobile from "../../assets/img/schoolbanner_mobile.jpg";
 import schooltrip from '../../assets/img/schooltrip.jpeg';
-import Schoolplan from '../../assets/img/Schoolplan.jpg';
+import Schoolplan from '../../assets/img/Schoolplan.jpeg';
 import Schooltrill from "../../Components/Schooltrill";
 import WhatsAppButton from "../../Components/Whatsapp";
 const SchoolTrips = () => {
@@ -24,7 +25,10 @@ const SchoolTrips = () => {
             <Topbar />
             <div className="birthday_top-bg p-0 m-0">
                 <div className="d-flex w-100 p-0 m-0 h-75">
-                    <img src={schoolbanner} alt="" className="img-fluid rounded-4" height="600px" />
+                    <img src={schoolbanner} alt="" className="img-fluid rounded-4 d-none d-sm-block" />
+                </div>
+                <div className="d-flex w-100 p-0 m-0 h-75">
+                    <img src={schoolbanner_mobile} alt="" className="img-fluid rounded-4 d-block d-sm-none"/>
                 </div>
 
                 <WhatsAppButton />

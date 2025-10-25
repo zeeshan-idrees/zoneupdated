@@ -1,5 +1,5 @@
 
-import grid2 from '../assets/img/home2.jpg'
+import grid2 from '../assets/img/grid2.jpeg'
 import grid3 from '../assets/img/home3.jpg'
 import birthdayzone_4 from '../assets/img/birthdayzone_4.JPG'
 import mainimg from '../assets/img/mainimg.jpg';

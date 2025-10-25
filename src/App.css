@@ -378,7 +378,9 @@
   background-color: #f8f9fa;
   color           : #007bff;
 }
-
+.dropdown-menu{
+  --bs-dropdown-min-width: 8rem !important;
+}
 /* Fix for dropdown positioning */
 .dropdown {
   position: relative;
@@ -484,13 +486,10 @@ ul.dropdown-menu.show {
 
 .image-container {
   flex         : 0 0 auto;
-  /* Prevent images from shrinking */
   width        : 200px;
-  /* Set a fixed width for each image */
   transition   : transform 0.3s, box-shadow 0.3s;
-  /* Smooth hover effect */
   border-radius: 8px;
-  /* Rounded corners for the container */
+
 }
 
 .image-container img {
@@ -517,4 +516,17 @@ ul.dropdown-menu.show {
   .contactborder .pad .frst_sec{
       padding-bottom: 3rem !important;  
   }
+ .promo-deals{
+flex-direction: column-reverse;
+  }
+  .qr-code{
+flex-direction: column-reverse !important;
+  }
 } 
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .dropdown-menu {
+      position: absolute;
+      margin-top: 11px;
+  }
+}

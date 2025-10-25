@@ -1,113 +1,139 @@
-import React, { useState, useRef } from "react"
-
+import React, { useState, useRef, useEffect } from "react";
 import Topbar from "../../Components/Topbar";
 import Birthdytrill from "../../Components/Birthdytrill";
-import birthdaybanner from "../../assets/img/birthdaybanner.jpg";
-import package1 from "../../assets/img/package1.png";
-import playIcon from "../../assets/img/play_btn.svg"; // Your custom play icon
-import pauseIcon from "../../assets/img/pause_btn.svg"; // Your custom pause icon
+import birthdaybanner from "../../assets/img/birthdaybanner.png";
+import birthdaybanner_mobile from "../../assets/img/birthdaybanner_mobile.png";
+import package1 from "../../assets/img/package1.jpg";
+import package2 from "../../assets/img/package2.jpg";
+import package3 from "../../assets/img/package3.jpg";
+import playIcon from "../../assets/img/play_btn.svg";
+import pauseIcon from "../../assets/img/pause_btn.svg";
 import IrrParallelogram from "../../Components/IrrParallelogram/IrrParallelogram";
 import Footer from "../../Components/Footerr";
 import WhatsAppButton from "../../Components/Whatsapp";
 
 const Gallery = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
+  const videoSectionRef = useRef(null);
 
+  // ▶️ Manual play/pause toggle
   const togglePlayPause = () => {
+    const vid = videoRef.current;
+    if (!vid) return;
+
     if (isPlaying) {
-      videoRef.current.pause();
+      vid.pause();
+      setIsPlaying(false);
     } else {
-      videoRef.current.play();
+      vid.muted = false; // 🔊 Unmute when user clicks Play
+      vid.play();
+      setIsPlaying(true);
     }
-    setIsPlaying(!isPlaying);
   };
+
+  // 👁 Automatically play/unmute when section visible, pause when out of view
+  useEffect(() => {
+    const vid = videoRef.current;
+    const section = videoSectionRef.current;
+
+    if (!vid || !section) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // When video section is visible (50% or more)
+            vid.muted = false; // Unmute automatically
+            vid.play();
+            setIsPlaying(true);
+          } else {
+            // When section is out of view
+            vid.pause();
+            setIsPlaying(false);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(section);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  // 🧠 Optional: Pause video when browser tab inactive
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      const vid = videoRef.current;
+      if (document.hidden && vid) {
+        vid.pause();
+        setIsPlaying(false);
+      }
+    };
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () =>
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+  }, []);
+
   return (
     <>
       <Topbar />
       <div className="text-blue">
+        {/* Banner Section */}
         <div className="birthday_top-bg p-0 m-0">
-          <div className="d-flex ">
-            <img src={birthdaybanner} width="100% " alt="" />
+          <div className="d-flex w-100 p-0 m-0">
+            <img
+              src={birthdaybanner}
+              alt=""
+              className="img-fluid rounded-4 d-none d-sm-block"
+            />
+          </div>
+          <div className="d-flex w-100 container">
+            <img
+              src={birthdaybanner_mobile}
+              alt=""
+              className="img-fluid rounded-4 d-block d-sm-none"
+            />
           </div>
         </div>
+
         <WhatsAppButton />
+
         <div className="container p-0">
           <div className="container bg-white pt-4">
             <Birthdytrill heading="Celebrate Bday with Thrill Zone" />
-            <div className="birthday-heading text-blue text-center fs-2vw fw-bold font-poppins-500  my-3 my-md-4 ">
+
+            {/* Birthday Packages */}
+            <div className="birthday-heading text-blue text-center fs-2vw fw-bold font-poppins-500 my-3 my-md-4">
               Birthday Packages
             </div>
             <div className="row justify-content-center g-5">
               <div className="school-trip_packages position-relative col-sm-12 col-lg-4">
-                <div className="package-image">
-                  <img src={package1} alt="" width="290px" height="370px" />
-                </div>
-                <div className="package1-data">
-                  <h4 className=" package-heading-1 text-center">Gold</h4>
-                  <div className="package-text">
-                    <h3 className="fs-20 text-white">Package 1 (15 PAX MIN)</h3>
-                    <ul>
-                      <li className="fs-18 text-white">4,900 Per Person</li>
-                      <li className="fs-18 text-white"> Duration: 3Hrs</li>
-                      <li className="fs-18 text-white">
-
-                        Valid for Trampoline, Ninja & SoftPlay .
-                      </li>
-                      <li className="fs-18 text-white">Credit Limit 4,000</li>
-                      <li className="fs-18 text-white"> Magic show & Drink Free Per Person.</li>
-                    </ul>
-                  </div>
-                </div>
+                <img src={package1} alt="" width="290px" height="370px" />
               </div>
               <div className="school-trip_packages position-relative col-sm-12 col-lg-4">
-                <div className="package-image">
-                  <img src={package1} alt="" width="290px" height="370px" />
-                </div>
-                <div className="package1-data">
-                  <h4 className=" package-heading-2 text-center">Silver</h4>
-                  <div className="package-text">
-                    <h3 className="fs-20 text-white">Package 2 (15 PAX MIN)</h3>
-                    <ul>
-                      <li className="fs-18 text-white"> 3,900 Per Person</li>
-                      <li className="fs-18 text-white"> Duration: 2 Hrs</li>
-                      <li className="fs-18 text-white">
-                        Valid for Trampoline, Ninja & SoftPla
-                      </li>
-                      <li className="fs-18 text-white">Credit Limit 3,000</li>
-                    </ul>
-                  </div>
-                </div>
+                <img src={package2} alt="" width="290px" height="370px" />
               </div>
               <div className="school-trip_packages position-relative col-sm-12 col-lg-4">
-                <div className="package-image">
-                  <img src={package1} alt="" width="290px" height="370px" />
-                </div>
-                <div className="package1-data">
-                  <h4 className=" package-heading-2 text-center">ADD ON </h4>
-                  <div className="package-text">
-                    <h3 className="fs-20 text-white">Customized Cake | Decor Rs.10,000 to 30,000 </h3>
-                    <ul>
-                      <li className="fs-18 text-white"> Magic Show : Rs 9,500 | Pinnata Rs: 8,000</li>
-                      <li className="fs-18 text-white"> Duration: 2.5 Hrs</li>
-                      <li className="fs-18 text-white">
-                        Photography Schoot with Frame 10 to 15pc or 2 vidoes 20k
-                      </li>
-                      <li className="fs-18 text-white">Venue Charges 20k</li>
-                    </ul>
-                  </div>
-                </div>
+                <img src={package3} alt="" width="290px" height="370px" />
               </div>
             </div>
-           
-            <section className=" mt-5 ">
-              <div className="videoClip borderParallelogram position-relative  ">
+
+            {/* 🎥 Video Section */}
+            <section
+              ref={videoSectionRef}
+              className="py-3 h-50 py-md-5 position-relative"
+            >
+              <div className="videoClip borderParallelogram position-relative">
                 <IrrParallelogram>
                   <video
-                    style={{ width: "100%" }}
-                    className="clip-path-video h-100 w-100"
-                    autoPlay
+                    style={{ height: "100%" }}
+                    className="clip-path-video w-100"
                     loop
+                    muted // required for autoplay on load
                     ref={videoRef}
                   >
                     <source
@@ -116,10 +142,7 @@ const Gallery = () => {
                     />
                     Your browser does not support the video tag.
                   </video>
-                  <button
-                    className="video-control-btn"
-                    onClick={togglePlayPause}
-                  >
+                  <button className="video-control-btn" onClick={togglePlayPause}>
                     <img
                       src={isPlaying ? pauseIcon : playIcon}
                       alt="Play/Pause"
@@ -130,6 +153,8 @@ const Gallery = () => {
             </section>
           </div>
         </div>
+
+        {/* Footer */}
         <section className="mt-5 position-relative overflow-hidden">
           <Footer />
         </section>

@@ -1,5 +1,4 @@
 
-// import grid1 from '../assets/img/grid1.jpeg'
 import grid2 from '../assets/img/grid2.jpeg'
 import grid3 from '../assets/img/grid3.jpg'
 import grid4 from '../assets/img/grid4.jpeg'
