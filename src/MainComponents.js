@@ -13,6 +13,7 @@ import Cafe  from'./Screens/Cafe';
 import SchoolTrips  from './Screens/SchoolTrips';
 import Deals  from'./Screens/Deals';
 import Menu  from './Screens/Menu';
+import VrGames from './Screens/VrGames';
 
 
 
@@ -29,6 +30,7 @@ const MainComponents = () => {
                             <Route path='/Birthday' element={<Birthday />} />
                             <Route path='/Contact-us' element={<ContactUs />} />
                             <Route path='/Cafe' element={<Cafe />} />
+                            <Route path='/VrGames' element={<VrGames />} />
                  
                             <Route path='/SchoolTrips' element={<SchoolTrips />} />
                             <Route path='/Deals' element={<Deals />} />

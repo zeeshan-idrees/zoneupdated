@@ -28,9 +28,7 @@ const Topbar = () => {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/" activeClassName="active">Home</NavLink>
                             </li>
-                            {/* <li className="nav-item">
-                                <NavLink className="nav-link text-blue" to="/About" activeClassName="active">About Us</NavLink>
-                            </li> */}
+                         
                             <li className="nav-item">
                                 <NavLink className="nav-link text-blue" to="/Birthday" activeClassName="active">Birthday Party</NavLink>
                             </li>
@@ -42,6 +40,9 @@ const Topbar = () => {
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link text-blue" to="/Gallery" activeClassName="active">Gallery</NavLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavLink className="nav-link text-blue" to="/VrGames" activeClassName="active">VrGames</NavLink>
                             </li>
 
                             {/* Cafe Dropdown */}
