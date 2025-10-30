@@ -137,13 +137,13 @@ const HomePage = () => {
             <IrrParallelogram>
               <video
                 style={{ height: "100%" }}
-                className="clip-path-video w-100"
+                className="clip-path-video w-100"   
                 loop
                 muted // browser allows autoplay only if muted at start
                 ref={videoRef}
               >
                 <source
-                  src="https://res.cloudinary.com/dydjbwvzf/video/upload/v1735730831/Reel_resize_fd4eev.mp4"
+                  src="https://res.cloudinary.com/dr5860rkp/video/upload/v1761821329/reel-resize-fd4eev_n6PwfEhm_ai1wui.mp4"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.

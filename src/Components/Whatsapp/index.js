@@ -32,7 +32,7 @@ const WhatsAppButton = () => {
       }}   
     >
       <FaWhatsapp style={{ fontSize: '28px' }} />
-      {/* <p className="chat-button">Chat with Us</p> */}
+    
     </button>
   );
 };

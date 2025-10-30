@@ -17,9 +17,7 @@
   background-color: #05061e;
 }
 
-
 .blueBtn {
-  /* background-image : url(./assets/img/blueBtnBg.svg); */
   background-color : transparent;
   background-repeat: no-repeat;
   background-size  : 100% 100% !important;
@@ -146,7 +144,6 @@
   width        : 90%;
   height       : 500px;
   margin       : 0 auto;
-  /* object-fit: contain; */
 }
 
 .videoClip iframe {
@@ -168,9 +165,7 @@
 
 .videoClip .video-control-btn img {
   width : 50px;
-  /* Adjust size as needed */
   height: 50px;
-  /* Adjust size as needed */
 }
 
 .HalfImg {
@@ -202,21 +197,21 @@
 }
 
 .white-image-button {
-  /* background-image   : url("./assets/img/whiteBtn.svg"); */
+  
   background-size    : contain;
-  /* Ensures the image covers the entire button */
+
   background-position: center;
-  /* Centers the image */
+
   line-height        : 50px;
-  /* Centers the text vertically */
+  
   cursor             : pointer;
-  /* Changes the cursor to pointer on hover */
+
   background-repeat  : no-repeat;
 }
 
 .white-image-button:hover {
   opacity: 0.8;
-  /* Adds a slight opacity change on hover */
+ 
 }
 
 .about-us_content {
@@ -280,8 +275,6 @@
   border-radius: 20px;
 }
 
-/* Createing Memories with */
-
 .school-area_section {
   border       : 1px solid#FFFFFF;
   border-radius: 20px;
@@ -322,19 +315,15 @@
   font-family: "Shine Bubble", Sans-serif;
 }
 
-/* General nav styles */
 .navbar-nav .nav-link {
   color      : #333;
-  /* padding    : 0.5rem 1rem; */
-  font-weight: bold;
+ font-weight: bold;
 }
 
 .navbar-nav .nav-link:hover {
   color: #007bff;
-  /* Change to your desired hover color */
 }
 
-/* Dropdown submenu styles */
 .dropdown-menu {
   display         : none;
   position        : absolute;
@@ -348,7 +337,7 @@
   opacity         : 0;
   visibility      : hidden;
   transform       : translateY(10px);
-  /* start the dropdown 10px lower */
+ 
 }
 
 .dropdown:hover .dropdown-menu {
@@ -358,7 +347,6 @@
   transform : translateY(0);
 }
 
-/* Animate dropdown when clicking */
 .show {
   display   : block;
   visibility: visible;
@@ -366,7 +354,6 @@
   transform : translateY(0);
 }
 
-/* Dropdown menu items */
 .dropdown-item {
   padding        : 0.75rem 1.5rem;
   color          : #333;
@@ -381,7 +368,6 @@
 .dropdown-menu{
   --bs-dropdown-min-width: 8rem !important;
 }
-/* Fix for dropdown positioning */
 .dropdown {
   position: relative;
 }
@@ -408,7 +394,6 @@ font-size: 42px;
 ul.dropdown-menu.show {
     margin-top: 8px;
 }
-
 
 @media (max-width: 768px) {
   .topBar {
@@ -494,20 +479,15 @@ ul.dropdown-menu.show {
 
 .image-container img {
   width        : 100%;
-  /* Make images responsive */
   height       : auto;
-  /* Maintain aspect ratio */
   border-radius: 8px;
-  /* Round the corners of the image */
   box-shadow   : 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Subtle shadow */
+  
 }
 
 .image-container:hover {
   transform : scale(1.05);
-  /* Scale up on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  /* Increase shadow on hover */
 }
 .bus-section {
   position: relative;
