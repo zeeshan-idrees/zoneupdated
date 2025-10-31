@@ -137,7 +137,7 @@ const Gallery = () => {
                     ref={videoRef}
                   >
                     <source
-                      src="https://res.cloudinary.com/dmlhsdtwp/video/upload/v1735237208/WhatsApp_Video_2024-12-26_at_4.44.51_PM_1_zggp1d.mp4"
+                      src="https://res.cloudinary.com/dr5860rkp/video/upload/v1761887733/Birthday_Video_1_uczyrp.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.

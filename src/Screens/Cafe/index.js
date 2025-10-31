@@ -160,7 +160,7 @@ const SchoolTrips = () => {
               ref={videoRef}
             >
               <source
-                src="https://res.cloudinary.com/dydjbwvzf/video/upload/v1739809164/Reel_05_1_1_rnpyr8.mp4"
+                src="https://res.cloudinary.com/dr5860rkp/video/upload/v1761888728/cafe_Video_1_1_e5i67v.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.

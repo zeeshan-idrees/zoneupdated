@@ -210,7 +210,7 @@ const Gallery = () => {
               ref={videoRef}
             >
               <source
-                src="https://res.cloudinary.com/dr5860rkp/video/upload/v1742803442/Snapinst.app_video_AQMxd7MRUaqEK47emi5JH8i8Nih56R1HDE7KAlV0qoW9wIVjeDj0pif5jf4YOjX1LZhGfI8opP3gdDatWAo2atA9iopsVChRVg6gqE8_i719nm.mp4"
+                src="https://res.cloudinary.com/dr5860rkp/video/upload/v1761887283/gallery_Video_1_dygeoh.mp4"
                 type="video/mp4"
               />
               Your browser does not support the video tag.

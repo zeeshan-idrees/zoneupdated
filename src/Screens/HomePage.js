@@ -92,7 +92,7 @@ const HomePage = () => {
           <div className="container bg-white my-4">
             <ExperinceTrill
               heading="EXPERIENCE A NEW THRILL"
-              heading2="Thrill Zone is the ultimate destination for you and the kids to indulge in some serious fun with interactive play zones for all ages big and small."
+              heading2="Thrill Zone is the ultimate destination for you and the kids to indulge in some serious fun with interactive play zones for all ages."
             />
           </div>
         </div>
